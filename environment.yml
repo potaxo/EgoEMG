@@ -10,7 +10,7 @@ dependencies:
   - python==3.11.12
   - pytorch::pytorch==2.2.2
   - pytorch::torchvision==0.17.2
-  - nvidia::pytorch-cuda==11.8
+  - pytorch-cuda==11.8
   - numpy==1.26.4
   - scipy==1.13.1
   - h5py==3.11.0
