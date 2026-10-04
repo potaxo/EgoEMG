@@ -1,6 +1,7 @@
-# Local agent/dev instructions (not part of the public repo)
+# Local agent/dev instructions; explicitly version the repository guide.
 AGENTS.md
 CLAUDE.md
+!/AGENTS.md
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
@@ -294,3 +295,12 @@ ablation_study/
 # Editor workspace files
 *.code-workspace
 regression_emg2pose/
+
+# Personal research outputs and caches; keep myself/ source, docs, tests,
+# and configuration files available for version control.
+/myself/outputs/
+/myself/logs/
+/myself/checkpoints/
+/myself/.cache/
+/myself/.pytest_cache/
+/myself/tmp/
