@@ -40,6 +40,7 @@
   temporary task files, and task-created caches. Use distinct run directories
   under `myself/outputs/`; direct pytest caches to `myself/.pytest_cache` and
   Python bytecode caches to `myself/.cache/pycache` (or disable bytecode writes).
+- Name folders clearly to describe their purpose and contents.
 - Reuse the original repository's code, configuration, normalization assets,
   and supplied checkpoints as inputs. Resolve the repository root separately
   from `myself/`; moving a script must not change its input asset paths.
@@ -47,7 +48,7 @@
   move unrelated existing files. Changes to this root `AGENTS.md` are allowed
   for maintaining these instructions; follow explicit user requests for edits
   to existing original files.
-- When moving previous run artifacts, preserve historical provenance and logs
+- When moving or renaming run artifacts, preserve historical provenance and logs
   as executed; record an old-to-new path mapping rather than rewriting history.
 
 ```bash
@@ -73,13 +74,14 @@ python scripts/data/validate_memmap.py \
 Evaluate the released EMGFormer-M checkpoint (preview shown here):
 
 ```bash
+export EGOEMG_RUN_DIR="$EGOEMG_ROOT/myself/outputs/preview_emgformer_middle_evaluation"
 python -m egoemg.test_analysis \
   experiment=emgformer/egoemg_emgformer_middle \
   egoemg_unified_memmap_dir="$EGOEMG_MEMMAP_DIR" \
   checkpoint="$EGOEMG_CHECKPOINT_DIR/egoemg_emgformer_middle.ckpt" \
   'trainer.devices=[0]' batch_size=8 num_workers=2 \
-  logger.save_dir="$EGOEMG_ROOT/myself/outputs/logger" \
-  hydra.run.dir="$EGOEMG_ROOT/myself/outputs/\${now:%Y-%m-%d}/\${now:%H-%M-%S}"
+  logger.save_dir="$EGOEMG_RUN_DIR/logger" \
+  hydra.run.dir="$EGOEMG_RUN_DIR/hydra"
 ```
 
 For other experiments, select the matching local configuration, dataset, and

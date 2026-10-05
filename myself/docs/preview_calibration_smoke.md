@@ -29,13 +29,14 @@ It never substitutes another dataset.
 
 All added workflow files and generated results live under `myself/`, mirroring
 the original repository layout. Original model/configuration/assets/checkpoints
-remain inputs from the repository root. Earlier run artifacts were moved intact;
-`myself/outputs/preview_calibration_smoke/relocation.json` maps their old paths to
-current locations. Their saved paths and source hashes describe the original
-execution, not a rerun after relocation. Historical artifacts are local outputs
-and are excluded from Git.
+remain inputs from the repository root. Earlier run artifacts were moved intact.
+`myself/outputs/run_directory_renames.json` maps historical paths to current
+locations; `myself/outputs/CURRENT_RUNS.md` links the renamed results and reports.
+The older `preview_calibration_smoke/relocation.json` records the first relocation.
+Saved paths and source hashes describe the original execution, not a rerun after
+relocation. Historical artifacts are local outputs and are excluded from Git.
 
-Each invocation creates a timestamp/UUID
+Each invocation creates a readable date/participant/hand/experiment/sequence
 subdirectory below the output parent; a smaller batch can be used if GPU memory
 is insufficient. No Trainer, training entrypoint, Hydra job, or logger is
 instantiated. Hydra composition sets `train=false`, one device, and explicit run

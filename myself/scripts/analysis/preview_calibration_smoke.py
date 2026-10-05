@@ -14,11 +14,8 @@ import os
 import random
 import subprocess
 import sys
-import uuid
-from datetime import datetime
 from pathlib import Path
 from typing import Any
-from zoneinfo import ZoneInfo
 
 
 # Keep imported repository modules from creating caches outside personal work.
@@ -38,6 +35,7 @@ sys.path.insert(0, str(REPO))
 
 from egoemg.constants import EMG_SAMPLE_RATE, JOINTS
 from egoemg.datasets.egoemg_memmap_dataset import EgoEmgMemmapDataset
+from myself.scripts.analysis.run_directories import create_run_directory
 
 
 OUTPUT_PARENT = PERSONAL_ROOT / "outputs/preview_calibration_smoke"
@@ -347,12 +345,20 @@ def main() -> None:
         raise FileNotFoundError(
             f"Missing preview manifest at {root} or checkpoint {args.checkpoint}"
         )
-    run = parent / (
-        datetime.now(ZoneInfo("Asia/Tokyo")).strftime("%Y%m%dT%H%M%S")
-        + "_"
-        + uuid.uuid4().hex[:8]
+    with np.load(root / "metadata.npz", allow_pickle=False) as metadata:
+        episodes = [
+            v.decode() if isinstance(v, bytes) else str(v)
+            for v in metadata["episode_id"]
+        ]
+        if args.episode not in episodes:
+            raise ValueError(f"Unknown episode: {args.episode}")
+        subject = metadata["episode_subject"][episodes.index(args.episode)]
+        participant_name = (
+            subject.decode() if isinstance(subject, bytes) else str(subject)
+        )
+    run = create_run_directory(
+        parent, participant_name, "right", "reference_offset_smoke"
     )
-    run.mkdir(parents=True, exist_ok=False)
     logging.basicConfig(
         level=logging.INFO,
         handlers=[
