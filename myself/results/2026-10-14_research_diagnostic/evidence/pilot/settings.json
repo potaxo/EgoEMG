@@ -1,0 +1,27 @@
+{
+  "epochs": 10,
+  "seeds": [
+    42,
+    43,
+    44
+  ],
+  "train_centers": 4174,
+  "test_centers": 3507,
+  "batch_size": 32,
+  "lr": 0.0001,
+  "weight_decay": 0.0001,
+  "optimizer": "Adam",
+  "loss": "20-finger MAE in radians",
+  "precision": "FP32; TF32 disabled",
+  "selection": "fixed final epoch, no tuning/early stopping",
+  "frozen": "entire released model; featurizer, decoder, vision backbone and vision head reused in eval/no_grad",
+  "trainable": "independent copies of temporal pool, vision projection, fusion projection and residual head",
+  "guided_change": "zero-initialized 512-to-64 RGB condition added INSIDE tanh before temporal score projection",
+  "split": "original complete-support train vs E intervals; gesture-disjoint, within wmh; not chronological",
+  "input_sha256": {
+    "/home/potaxo/research/egoemg/EgoEMG/myself/scripts/analysis/visual_guided_pool_pilot.py": "8ca6afc7aec7f27eb3fc6ee07078641d17acdc5109cef76b48cb6cc31f4848f6",
+    "/home/potaxo/research/egoemg/EgoEMG/myself/scripts/analysis/common_modality_evaluation.py": "2893fd52273dbd7e2690cea4ceca3e7e702a22a313b2769cbb1631de3d00e9ff",
+    "/home/potaxo/research/egoemg/EgoEMG/myself/outputs/single_subject_calibration_suite/2026-10-05_wmh_right_suite_full_02/manifest.npz": "9b0f3fc59db5e4e0e10ad19e66f231fc64f4940e1887a0c776df06da45fab71a",
+    "/home/potaxo/research/egoemg/EgoEMG/checkpoints/fusion_resnet18_emgfusion_center.ckpt": "7d4d1b9f69812bb9bf8f807a0b2e005c47591ea260a3f0303229ab9344d6ea93"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "all_saved_mae_recalculated": true,
+  "all_wrist_predictions_identical": true,
+  "all_head_seeds_present": true,
+  "identical_evaluation_ids": true,
+  "rgb_pool_equals_reference": true,
+  "traces_contiguous": true,
+  "scored_rows": 11,
+  "evaluation_centers": 3654,
+  "evaluation_finger_entries": 73080
+}

@@ -1,0 +1,23 @@
+[
+  {
+    "seed": 42,
+    "paired_training_seconds": 133.86095687300008,
+    "peak_gpu_bytes": 471614976,
+    "original_parameters": 684695,
+    "guided_parameters": 717463
+  },
+  {
+    "seed": 43,
+    "paired_training_seconds": 122.25788075900005,
+    "peak_gpu_bytes": 471614976,
+    "original_parameters": 684695,
+    "guided_parameters": 717463
+  },
+  {
+    "seed": 44,
+    "paired_training_seconds": 121.31037302599998,
+    "peak_gpu_bytes": 471614976,
+    "original_parameters": 684695,
+    "guided_parameters": 717463
+  }
+]

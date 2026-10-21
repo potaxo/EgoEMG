@@ -1,0 +1,140 @@
+{
+  "schema_version": 1,
+  "export_date": "2026-10-21",
+  "timezone": "Asia/Tokyo",
+  "checkout_at_export": {
+    "commit": "2765a9bf69323b5b14cb1268627e1c9932794f71",
+    "branch": "reproduce/baseline",
+    "uncommitted_changes_present": true
+  },
+  "execution_identity_note": "The checkout commit describes export context only, not experiment execution. Original execution hashes/settings are preserved in the listed evidence. Experiments and archived checks were not rerun during export.",
+  "copy_policy": "Selected output artifacts copied byte-for-byte; original run directories unchanged. No dataset inputs, per-window predictions/features, weights, or full logs copied.",
+  "files": [
+    {
+      "snapshot_path": "report.md",
+      "source_path": "myself/outputs/single_subject_calibration_suite/2026-10-05_wmh_right_suite_full_02/report.md",
+      "sha256": "2018c5517d046a9d440e8b281cb05f6317c1193059bc3a8770bd750d6fb48e44",
+      "bytes": 9067
+    },
+    {
+      "snapshot_path": "primary_comparison.md",
+      "source_path": "myself/outputs/single_subject_calibration_suite/2026-10-05_wmh_right_suite_full_02/primary_comparison.md",
+      "sha256": "149dbd628d54dab6d4ab7f66513e0f2aebca216aff71994cb569e3b050c66be7",
+      "bytes": 791
+    },
+    {
+      "snapshot_path": "primary_comparison.csv",
+      "source_path": "myself/outputs/single_subject_calibration_suite/2026-10-05_wmh_right_suite_full_02/primary_comparison.csv",
+      "sha256": "4204a8c8f7c1974d08d60255fd95f7cf1426fb9499a52a9b862fab2cb24c9fb8",
+      "bytes": 1506
+    },
+    {
+      "snapshot_path": "matched_comparison.md",
+      "source_path": "myself/outputs/single_subject_calibration_suite/2026-10-05_wmh_right_suite_full_02/matched_comparison.md",
+      "sha256": "149dbd628d54dab6d4ab7f66513e0f2aebca216aff71994cb569e3b050c66be7",
+      "bytes": 791
+    },
+    {
+      "snapshot_path": "matched_comparison.csv",
+      "source_path": "myself/outputs/single_subject_calibration_suite/2026-10-05_wmh_right_suite_full_02/matched_comparison.csv",
+      "sha256": "4204a8c8f7c1974d08d60255fd95f7cf1426fb9499a52a9b862fab2cb24c9fb8",
+      "bytes": 1506
+    },
+    {
+      "snapshot_path": "all_seeds.md",
+      "source_path": "myself/outputs/single_subject_calibration_suite/2026-10-05_wmh_right_suite_full_02/all_seeds.md",
+      "sha256": "7dd1f394d3fe2900ea5195166d107937c9728b0193e844857b745715b0ffcdc7",
+      "bytes": 1123
+    },
+    {
+      "snapshot_path": "per_seed_metrics.csv",
+      "source_path": "myself/outputs/single_subject_calibration_suite/2026-10-05_wmh_right_suite_full_02/per_seed_metrics.csv",
+      "sha256": "0e45d59cd8422204d839bb9c86ea8eaec415851fdf2a06b6b76daf5cd7e2b883",
+      "bytes": 2175
+    },
+    {
+      "snapshot_path": "detailed_metrics.csv",
+      "source_path": "myself/outputs/single_subject_calibration_suite/2026-10-05_wmh_right_suite_full_02/detailed_metrics.csv",
+      "sha256": "2656e89b5d8609115247bdc31ffb69a9c0b87fef307f770aea0fe8f8f46af3b4",
+      "bytes": 51915
+    },
+    {
+      "snapshot_path": "teacher_quality.csv",
+      "source_path": "myself/outputs/single_subject_calibration_suite/2026-10-05_wmh_right_suite_full_02/teacher_quality.csv",
+      "sha256": "ead2a0bcb0a8c0d2422045028105486a043989388f7e293f31daae3efd299dd8",
+      "bytes": 3086
+    },
+    {
+      "snapshot_path": "reference_variation.csv",
+      "source_path": "myself/outputs/single_subject_calibration_suite/2026-10-05_wmh_right_suite_full_02/reference_variation.csv",
+      "sha256": "7b6ffdbc7879e17e4db98c268188d507ea585994cedad4ce2bac4ba0f0d7ddde",
+      "bytes": 6035
+    },
+    {
+      "snapshot_path": "coverage.md",
+      "source_path": "myself/outputs/single_subject_calibration_suite/2026-10-05_wmh_right_suite_full_02/coverage.md",
+      "sha256": "85ab1589f317cd603458c64bf2a97ca95553fd61a2574e95ffa5082a66006a1a",
+      "bytes": 4537
+    },
+    {
+      "snapshot_path": "coverage.json",
+      "source_path": "myself/outputs/single_subject_calibration_suite/2026-10-05_wmh_right_suite_full_02/coverage.json",
+      "sha256": "241580c5c1d3063ca3a038ae67cdd2e5cb219008ec1a4670f39e983cab59fc69",
+      "bytes": 18921
+    },
+    {
+      "snapshot_path": "gesture_coverage.csv",
+      "source_path": "myself/outputs/single_subject_calibration_suite/2026-10-05_wmh_right_suite_full_02/gesture_coverage.csv",
+      "sha256": "a504e934c79f47ac793cd71156e08d9bdff24a1aa2afe1e8baa13ec26fc62733",
+      "bytes": 1593
+    },
+    {
+      "snapshot_path": "rgb_interval_coverage.csv",
+      "source_path": "myself/outputs/single_subject_calibration_suite/2026-10-05_wmh_right_suite_full_02/rgb_interval_coverage.csv",
+      "sha256": "9e75e6af905191cf22bd84007920b8d04168415321c08fd8915e10c67de5c9b4",
+      "bytes": 438
+    },
+    {
+      "snapshot_path": "rgb_gesture_coverage.csv",
+      "source_path": "myself/outputs/single_subject_calibration_suite/2026-10-05_wmh_right_suite_full_02/rgb_gesture_coverage.csv",
+      "sha256": "69cffe6d67fcad9cb07627b6a517d50c8b0a86115aea3a8cad3b6d193bb86090",
+      "bytes": 732
+    },
+    {
+      "snapshot_path": "settings.json",
+      "source_path": "myself/outputs/single_subject_calibration_suite/2026-10-05_wmh_right_suite_full_02/settings.json",
+      "sha256": "a0c9626c3171a2133a5096a7260851261d381113a5942b1c1c41f3fcc4772370",
+      "bytes": 53488
+    },
+    {
+      "snapshot_path": "verification.json",
+      "source_path": "myself/outputs/single_subject_calibration_suite/2026-10-05_wmh_right_suite_full_02/verification.json",
+      "sha256": "8325c5b3e6b9d5359cb94e7ee3705225723820586f620d5a0bdc8459b1ba8eb4",
+      "bytes": 2381
+    },
+    {
+      "snapshot_path": "verification_recalculation.json",
+      "source_path": "myself/outputs/single_subject_calibration_suite/2026-10-05_wmh_right_suite_full_02/verification_recalculation.json",
+      "sha256": "8bf0de6059bfb94a80ce75f205d2c8a640e88a2e096f7a9f77cf21486090774c",
+      "bytes": 309
+    },
+    {
+      "snapshot_path": "per_joint.png",
+      "source_path": "myself/outputs/single_subject_calibration_suite/2026-10-05_wmh_right_suite_full_02/per_joint.png",
+      "sha256": "4b9505e7d8a0b5d9fbeeedb10394a2690a1adbfba6099618c031d6d1d7aed1e5",
+      "bytes": 223455
+    },
+    {
+      "snapshot_path": "per_gesture.png",
+      "source_path": "myself/outputs/single_subject_calibration_suite/2026-10-05_wmh_right_suite_full_02/per_gesture.png",
+      "sha256": "4bcd6560088ef52db9da5639a4827d5e013bb37018fcf6fcbc7a775045c39f3b",
+      "bytes": 205742
+    },
+    {
+      "snapshot_path": "time_traces.png",
+      "source_path": "myself/outputs/single_subject_calibration_suite/2026-10-05_wmh_right_suite_full_02/time_traces.png",
+      "sha256": "db5e93ebfc2b630eccdb9e812b8b7e01b2a2bbd460502f72e45011c2468d96fc",
+      "bytes": 358841
+    }
+  ]
+}

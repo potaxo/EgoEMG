@@ -1,0 +1,800 @@
+{
+  "intervals": [
+    {
+      "interval": 0,
+      "split": "user",
+      "split_id": 1,
+      "local_start": 0,
+      "local_end": 97375,
+      "rows": 97375,
+      "candidate_windows": 427,
+      "eligible_windows": 427,
+      "insufficient_length": false,
+      "exclusions": {}
+    },
+    {
+      "interval": 1,
+      "split": "both",
+      "split_id": 3,
+      "local_start": 97375,
+      "local_end": 120745,
+      "rows": 23370,
+      "candidate_windows": 57,
+      "eligible_windows": 57,
+      "insufficient_length": false,
+      "exclusions": {}
+    },
+    {
+      "interval": 2,
+      "split": "user",
+      "split_id": 1,
+      "local_start": 120745,
+      "local_end": 140220,
+      "rows": 19475,
+      "candidate_windows": 38,
+      "eligible_windows": 38,
+      "insufficient_length": false,
+      "exclusions": {}
+    },
+    {
+      "interval": 3,
+      "split": "train",
+      "split_id": 0,
+      "local_start": 140220,
+      "local_end": 296020,
+      "rows": 155800,
+      "candidate_windows": 720,
+      "eligible_windows": 720,
+      "insufficient_length": false,
+      "exclusions": {}
+    },
+    {
+      "interval": 4,
+      "split": "gesture",
+      "split_id": 2,
+      "local_start": 296020,
+      "local_end": 323285,
+      "rows": 27265,
+      "candidate_windows": 77,
+      "eligible_windows": 77,
+      "insufficient_length": false,
+      "exclusions": {}
+    },
+    {
+      "interval": 5,
+      "split": "train",
+      "split_id": 0,
+      "local_start": 323285,
+      "local_end": 416765,
+      "rows": 93480,
+      "candidate_windows": 408,
+      "eligible_windows": 408,
+      "insufficient_length": false,
+      "exclusions": {}
+    },
+    {
+      "interval": 6,
+      "split": "gesture",
+      "split_id": 2,
+      "local_start": 416765,
+      "local_end": 440135,
+      "rows": 23370,
+      "candidate_windows": 57,
+      "eligible_windows": 57,
+      "insufficient_length": false,
+      "exclusions": {}
+    },
+    {
+      "interval": 7,
+      "split": "train",
+      "split_id": 0,
+      "local_start": 440135,
+      "local_end": 498560,
+      "rows": 58425,
+      "candidate_windows": 233,
+      "eligible_windows": 233,
+      "insufficient_length": false,
+      "exclusions": {}
+    },
+    {
+      "interval": 8,
+      "split": "gesture",
+      "split_id": 2,
+      "local_start": 498560,
+      "local_end": 521930,
+      "rows": 23370,
+      "candidate_windows": 57,
+      "eligible_windows": 57,
+      "insufficient_length": false,
+      "exclusions": {}
+    },
+    {
+      "interval": 9,
+      "split": "train",
+      "split_id": 0,
+      "local_start": 521930,
+      "local_end": 595935,
+      "rows": 74005,
+      "candidate_windows": 311,
+      "eligible_windows": 311,
+      "insufficient_length": false,
+      "exclusions": {}
+    },
+    {
+      "interval": 10,
+      "split": "gesture",
+      "split_id": 2,
+      "local_start": 595935,
+      "local_end": 623200,
+      "rows": 27265,
+      "candidate_windows": 77,
+      "eligible_windows": 77,
+      "insufficient_length": false,
+      "exclusions": {}
+    },
+    {
+      "interval": 11,
+      "split": "train",
+      "split_id": 0,
+      "local_start": 623200,
+      "local_end": 716680,
+      "rows": 93480,
+      "candidate_windows": 408,
+      "eligible_windows": 408,
+      "insufficient_length": false,
+      "exclusions": {}
+    },
+    {
+      "interval": 12,
+      "split": "user",
+      "split_id": 1,
+      "local_start": 716680,
+      "local_end": 1016595,
+      "rows": 299915,
+      "candidate_windows": 1440,
+      "eligible_windows": 1440,
+      "insufficient_length": false,
+      "exclusions": {}
+    },
+    {
+      "interval": 13,
+      "split": "both",
+      "split_id": 3,
+      "local_start": 1016595,
+      "local_end": 1039965,
+      "rows": 23370,
+      "candidate_windows": 57,
+      "eligible_windows": 57,
+      "insufficient_length": false,
+      "exclusions": {}
+    },
+    {
+      "interval": 14,
+      "split": "user",
+      "split_id": 1,
+      "local_start": 1039965,
+      "local_end": 1078915,
+      "rows": 38950,
+      "candidate_windows": 135,
+      "eligible_windows": 135,
+      "insufficient_length": false,
+      "exclusions": {}
+    },
+    {
+      "interval": 15,
+      "split": "both",
+      "split_id": 3,
+      "local_start": 1078915,
+      "local_end": 1102285,
+      "rows": 23370,
+      "candidate_windows": 57,
+      "eligible_windows": 57,
+      "insufficient_length": false,
+      "exclusions": {}
+    },
+    {
+      "interval": 16,
+      "split": "user",
+      "split_id": 1,
+      "local_start": 1102285,
+      "local_end": 1117865,
+      "rows": 15580,
+      "candidate_windows": 18,
+      "eligible_windows": 18,
+      "insufficient_length": false,
+      "exclusions": {}
+    },
+    {
+      "interval": 17,
+      "split": "both",
+      "split_id": 3,
+      "local_start": 1117865,
+      "local_end": 1141235,
+      "rows": 23370,
+      "candidate_windows": 57,
+      "eligible_windows": 57,
+      "insufficient_length": false,
+      "exclusions": {}
+    },
+    {
+      "interval": 18,
+      "split": "user",
+      "split_id": 1,
+      "local_start": 1141235,
+      "local_end": 1277560,
+      "rows": 136325,
+      "candidate_windows": 622,
+      "eligible_windows": 622,
+      "insufficient_length": false,
+      "exclusions": {}
+    },
+    {
+      "interval": 19,
+      "split": "both",
+      "split_id": 3,
+      "local_start": 1277560,
+      "local_end": 1300930,
+      "rows": 23370,
+      "candidate_windows": 57,
+      "eligible_windows": 57,
+      "insufficient_length": false,
+      "exclusions": {}
+    },
+    {
+      "interval": 20,
+      "split": "user",
+      "split_id": 1,
+      "local_start": 1300930,
+      "local_end": 1320405,
+      "rows": 19475,
+      "candidate_windows": 38,
+      "eligible_windows": 38,
+      "insufficient_length": false,
+      "exclusions": {}
+    },
+    {
+      "interval": 21,
+      "split": "train",
+      "split_id": 0,
+      "local_start": 1320405,
+      "local_end": 1476205,
+      "rows": 155800,
+      "candidate_windows": 720,
+      "eligible_windows": 720,
+      "insufficient_length": false,
+      "exclusions": {}
+    },
+    {
+      "interval": 22,
+      "split": "gesture",
+      "split_id": 2,
+      "local_start": 1476205,
+      "local_end": 1503470,
+      "rows": 27265,
+      "candidate_windows": 77,
+      "eligible_windows": 77,
+      "insufficient_length": false,
+      "exclusions": {}
+    },
+    {
+      "interval": 23,
+      "split": "train",
+      "split_id": 0,
+      "local_start": 1503470,
+      "local_end": 1596950,
+      "rows": 93480,
+      "candidate_windows": 408,
+      "eligible_windows": 408,
+      "insufficient_length": false,
+      "exclusions": {}
+    },
+    {
+      "interval": 24,
+      "split": "gesture",
+      "split_id": 2,
+      "local_start": 1596950,
+      "local_end": 1620320,
+      "rows": 23370,
+      "candidate_windows": 57,
+      "eligible_windows": 57,
+      "insufficient_length": false,
+      "exclusions": {}
+    },
+    {
+      "interval": 25,
+      "split": "train",
+      "split_id": 0,
+      "local_start": 1620320,
+      "local_end": 1678745,
+      "rows": 58425,
+      "candidate_windows": 233,
+      "eligible_windows": 228,
+      "insufficient_length": false,
+      "exclusions": {
+        "invalid_center_supervision": 5
+      }
+    },
+    {
+      "interval": 26,
+      "split": "gesture",
+      "split_id": 2,
+      "local_start": 1678745,
+      "local_end": 1702115,
+      "rows": 23370,
+      "candidate_windows": 57,
+      "eligible_windows": 57,
+      "insufficient_length": false,
+      "exclusions": {}
+    },
+    {
+      "interval": 27,
+      "split": "train",
+      "split_id": 0,
+      "local_start": 1702115,
+      "local_end": 1780015,
+      "rows": 77900,
+      "candidate_windows": 330,
+      "eligible_windows": 330,
+      "insufficient_length": false,
+      "exclusions": {}
+    },
+    {
+      "interval": 28,
+      "split": "gesture",
+      "split_id": 2,
+      "local_start": 1780015,
+      "local_end": 1803385,
+      "rows": 23370,
+      "candidate_windows": 57,
+      "eligible_windows": 57,
+      "insufficient_length": false,
+      "exclusions": {}
+    },
+    {
+      "interval": 29,
+      "split": "train",
+      "split_id": 0,
+      "local_start": 1803385,
+      "local_end": 1896865,
+      "rows": 93480,
+      "candidate_windows": 408,
+      "eligible_windows": 408,
+      "insufficient_length": false,
+      "exclusions": {}
+    },
+    {
+      "interval": 30,
+      "split": "user",
+      "split_id": 1,
+      "local_start": 1896865,
+      "local_end": 1935815,
+      "rows": 38950,
+      "candidate_windows": 135,
+      "eligible_windows": 135,
+      "insufficient_length": false,
+      "exclusions": {}
+    },
+    {
+      "interval": 31,
+      "split": "train",
+      "split_id": 0,
+      "local_start": 1935815,
+      "local_end": 1935926,
+      "rows": 111,
+      "candidate_windows": 0,
+      "eligible_windows": 0,
+      "insufficient_length": true,
+      "exclusions": {}
+    }
+  ],
+  "pool_coverage": {
+    "T_all": {
+      "centers": 4174,
+      "support_union_rows": 953800,
+      "support_union_seconds": 476.9,
+      "nominal_center_seconds": 417.4,
+      "support_unions": [
+        [
+          140220,
+          296020
+        ],
+        [
+          323285,
+          416685
+        ],
+        [
+          440135,
+          498535
+        ],
+        [
+          521930,
+          595930
+        ],
+        [
+          623200,
+          716600
+        ],
+        [
+          1320405,
+          1476205
+        ],
+        [
+          1503470,
+          1596870
+        ],
+        [
+          1620320,
+          1678720
+        ],
+        [
+          1702115,
+          1779915
+        ],
+        [
+          1803385,
+          1896785
+        ]
+      ],
+      "overlapping_supports": true
+    },
+    "E": {
+      "centers": 3654,
+      "support_union_rows": 978600,
+      "support_union_seconds": 489.3,
+      "nominal_center_seconds": 365.4,
+      "support_unions": [
+        [
+          0,
+          97200
+        ],
+        [
+          97375,
+          120575
+        ],
+        [
+          120745,
+          140145
+        ],
+        [
+          296020,
+          323220
+        ],
+        [
+          416765,
+          439965
+        ],
+        [
+          498560,
+          521760
+        ],
+        [
+          595935,
+          623135
+        ],
+        [
+          716680,
+          1016480
+        ],
+        [
+          1016595,
+          1039795
+        ],
+        [
+          1039965,
+          1078765
+        ],
+        [
+          1078915,
+          1102115
+        ],
+        [
+          1102285,
+          1117685
+        ],
+        [
+          1117865,
+          1141065
+        ],
+        [
+          1141235,
+          1277435
+        ],
+        [
+          1277560,
+          1300760
+        ],
+        [
+          1300930,
+          1320330
+        ],
+        [
+          1476205,
+          1503405
+        ],
+        [
+          1596950,
+          1620150
+        ],
+        [
+          1678745,
+          1701945
+        ],
+        [
+          1780015,
+          1803215
+        ],
+        [
+          1896865,
+          1935665
+        ]
+      ],
+      "overlapping_supports": true
+    }
+  },
+  "episode_global": [
+    0,
+    1935926
+  ],
+  "participant": "wmh",
+  "metadata_subject_id": 19,
+  "row_subject_ids": [
+    21
+  ],
+  "splits": {
+    "0": "train",
+    "1": "user",
+    "2": "gesture",
+    "3": "both"
+  },
+  "nominal_sample_rate_hz": 2000,
+  "duration_convention": "Support union length/2000; nominal center union of [center,center+stride)/2000. Overlapping supports are not summed; timestamps need not be uniform.",
+  "gesture_vocabulary": {
+    "format": "egoemg_gesture_vocabulary",
+    "description": "Mapping of label_gesture_class (0-59; -1 = no active gesture (pair with label_gesture_active)) to gesture names used in the EgoEMG dataset. -1 in label_gesture_class means no gesture.",
+    "classes": {
+      "0": {
+        "name": "ASL1",
+        "description": "ASL digit 1"
+      },
+      "1": {
+        "name": "ASL2",
+        "description": "ASL digit 2"
+      },
+      "2": {
+        "name": "ASL3",
+        "description": "ASL digit 3"
+      },
+      "3": {
+        "name": "ASL4",
+        "description": "ASL digit 4"
+      },
+      "4": {
+        "name": "ASL5",
+        "description": "ASL digit 5"
+      },
+      "5": {
+        "name": "ASL6",
+        "description": "ASL digit 6"
+      },
+      "6": {
+        "name": "ASL7",
+        "description": "ASL digit 7"
+      },
+      "7": {
+        "name": "ASL8",
+        "description": "ASL digit 8"
+      },
+      "8": {
+        "name": "ASL9",
+        "description": "ASL digit 9"
+      },
+      "9": {
+        "name": "Claw3",
+        "description": "Three-finger claw pose (index + middle + ring flexed)"
+      },
+      "10": {
+        "name": "Claw5",
+        "description": "Five-finger claw pose (all fingers flexed)"
+      },
+      "11": {
+        "name": "FreeAction",
+        "description": "Free-form unconstrained hand action"
+      },
+      "12": {
+        "name": "ILY",
+        "description": "I Love You hand sign (thumb, index, pinky extended)"
+      },
+      "13": {
+        "name": "IndexBow",
+        "description": "Index finger flexion/extension bowing"
+      },
+      "14": {
+        "name": "IndexMiddleClaw",
+        "description": "Index and middle fingers clawed, others extended"
+      },
+      "15": {
+        "name": "JoystickCircle",
+        "description": "Circular joystick manipulation on the palm with thumb"
+      },
+      "16": {
+        "name": "JoystickSlide",
+        "description": "Linear joystick sliding on the palm with thumb"
+      },
+      "17": {
+        "name": "MiddleBow",
+        "description": "Middle finger flexion/extension bowing"
+      },
+      "18": {
+        "name": "Nine",
+        "description": "Hand forming number 9 (four fingers curled, index up)"
+      },
+      "19": {
+        "name": "PalmYaw",
+        "description": "Palm facing up/down rotation about the yaw axis"
+      },
+      "20": {
+        "name": "PinchMiddle",
+        "description": "Thumb to middle fingertip pinch"
+      },
+      "21": {
+        "name": "PinkyBow",
+        "description": "Pinky finger flexion/extension bowing"
+      },
+      "22": {
+        "name": "Rest",
+        "description": "Relaxed hand in neutral resting posture"
+      },
+      "23": {
+        "name": "RingAndThumb",
+        "description": "Ring finger touching thumb tip"
+      },
+      "24": {
+        "name": "RingBow",
+        "description": "Ring finger flexion/extension bowing"
+      },
+      "25": {
+        "name": "Rock",
+        "description": "Rock on hand sign (index and pinky extended)"
+      },
+      "26": {
+        "name": "Thumb",
+        "description": "Thumb up"
+      },
+      "27": {
+        "name": "nocontact_disperse_palm",
+        "description": "Fingers spread apart with palm open, no contact"
+      },
+      "28": {
+        "name": "nocontact_free",
+        "description": "Free-form finger motion without contact"
+      },
+      "29": {
+        "name": "nocontact_grab",
+        "description": "Simulated grasping motion without object contact"
+      },
+      "30": {
+        "name": "Clap",
+        "description": "Both hands clapping together symmetrically"
+      },
+      "31": {
+        "name": "CrossHand",
+        "description": "Both hands crossed fingers"
+      },
+      "32": {
+        "name": "CrossStretch",
+        "description": "Hands opposite fingers and stretched"
+      },
+      "33": {
+        "name": "FingerPullLeft",
+        "description": "Left hand pulls right-hand fingers"
+      },
+      "34": {
+        "name": "FingerPullRight",
+        "description": "Right hand pulls left-hand fingers"
+      },
+      "35": {
+        "name": "FingerTipTouch",
+        "description": "Matching fingertips of both hands touching"
+      },
+      "36": {
+        "name": "FistBump",
+        "description": "Two fists bumping together"
+      },
+      "37": {
+        "name": "Gaming",
+        "description": "Both hands holding a game controller"
+      },
+      "38": {
+        "name": "HandClasp",
+        "description": "Hands clasped together"
+      },
+      "39": {
+        "name": "HandRub",
+        "description": "Rubbing palms together"
+      },
+      "40": {
+        "name": "IndexTapping",
+        "description": "Both index fingers tapping in the air"
+      },
+      "41": {
+        "name": "PalmRoll",
+        "description": "Palms facing, rolling around each other"
+      },
+      "42": {
+        "name": "PalmStack",
+        "description": "One palm stacked on top of the other"
+      },
+      "43": {
+        "name": "PinkyHook",
+        "description": "Pinky fingers hooked together"
+      },
+      "44": {
+        "name": "Prayer",
+        "description": "Palms pressed together in prayer position"
+      },
+      "45": {
+        "name": "Squeeze",
+        "description": "Both hands squeezing an imaginary object"
+      },
+      "46": {
+        "name": "SymOpen",
+        "description": "Both hands opening symmetrically from closed to open"
+      },
+      "47": {
+        "name": "SymSwing",
+        "description": "Both hands swinging symmetrically side to side"
+      },
+      "48": {
+        "name": "ThumbWrestle",
+        "description": "Thumbs wrestling each other"
+      },
+      "49": {
+        "name": "Typing",
+        "description": "Both hands typing on a virtual keyboard"
+      },
+      "50": {
+        "name": "raw",
+        "description": "Unconstrained bimanual hand movement"
+      },
+      "51": {
+        "name": "Kiss",
+        "description": "Fingertips of both hands touching (thumb and middle), then separating"
+      },
+      "52": {
+        "name": "MiddleOppo",
+        "description": "Middle and ring finger of one hand opposes the other hand"
+      },
+      "53": {
+        "name": "Beijing",
+        "description": "Two hands crossing to make a 'Bei' Chinese character"
+      },
+      "54": {
+        "name": "Checky",
+        "description": "Two hands thumb make 'Checky' sign"
+      },
+      "55": {
+        "name": "PairClaw",
+        "description": "Both hands clawing with asymmetric finger configurations"
+      },
+      "56": {
+        "name": "PairOK",
+        "description": "Both hands forming OK signs"
+      },
+      "57": {
+        "name": "Picture",
+        "description": "Hands forming a picture frame rectangle"
+      },
+      "58": {
+        "name": "PinchWring",
+        "description": "Two hand pinch and wring"
+      },
+      "59": {
+        "name": "ThumbOppo",
+        "description": "Thumbs of both hands in opposition at different orientations"
+      }
+    }
+  },
+  "support_intersection_checked": true,
+  "exclusion_convention": "First failing reason: input, center validity, center finiteness; intervals shorter than window separately reported.",
+  "tiny_machinery_check": false
+}

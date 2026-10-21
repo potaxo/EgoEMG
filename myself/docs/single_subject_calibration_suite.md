@@ -1,5 +1,10 @@
 # Single-participant offline calibration suite
 
+For GitHub discussion, read the [completed report snapshot](../results/2026-10-05_single_subject_calibration/report.md)
+and its [selected evidence and provenance](../results/2026-10-05_single_subject_calibration/README.md).
+Full run artifacts remain local under `myself/outputs/`; this document describes
+the protocol and workflow rather than duplicating the result tables.
+
 The suite compares the frozen released EMGFormer-M against regularized offsets,
 diagonal affine calibration and final angle-linear finger-row adaptation. Each
 method independently fits reference labels or the released ResNet18 crop teacher.

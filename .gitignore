@@ -304,3 +304,7 @@ regression_emg2pose/
 /myself/.cache/
 /myself/.pytest_cache/
 /myself/tmp/
+
+# Curated report figures are versioned; full experiment outputs stay ignored.
+!/myself/results/**/figures/
+!/myself/results/**/figures/**

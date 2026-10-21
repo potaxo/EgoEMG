@@ -1,0 +1,21 @@
+{
+  "targeted_pytest": {
+    "result": "32 passed in 1.75s",
+    "files": [
+      "myself/egoemg/tests/test_visual_guided_pool_pilot.py",
+      "myself/egoemg/tests/test_repeated_gesture_diagnostic.py",
+      "myself/egoemg/tests/test_single_subject_calibration_suite.py",
+      "egoemg/tests/test_mid_fusion_forward_modes.py",
+      "egoemg/tests/test_mid_fusion_vision_lock.py"
+    ],
+    "cache_dir": "myself/.pytest_cache",
+    "basetemp": "myself/.cache/research_verification_pytest"
+  },
+  "black_and_isort": "all 7 newly added Python files passed",
+  "rendered_figures_reviewed": [
+    "figures/pooling_pilot.png",
+    "figures/repeated_calibration.png"
+  ],
+  "original_tracked_files_modified": false,
+  "data_and_supplied_checkpoint_bytes_unchanged": "identity hashes rechecked against the calibration run settings"
+}

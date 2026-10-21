@@ -1,0 +1,34 @@
+{
+  "wmh": {
+    "all_metric_rows_recalculated": true,
+    "complete_supports_chronological": true,
+    "fit_centers": 1482,
+    "evaluation_centers": 1461,
+    "gestures": 37,
+    "fit_support_seconds": 366.49999999999983,
+    "later_support_seconds": 364.3999999999999
+  },
+  "zbk": {
+    "all_metric_rows_recalculated": true,
+    "complete_supports_chronological": true,
+    "fit_centers": 1001,
+    "evaluation_centers": 993,
+    "gestures": 25,
+    "fit_support_seconds": 247.60000000000008,
+    "later_support_seconds": 246.80000000000007
+  },
+  "common": {
+    "all_overall_scores_recalculated": true,
+    "centers": 3507,
+    "mean_zero_emg_prediction_change_deg": 0.03133615851402283
+  },
+  "pilot": {
+    "all_overall_scores_recalculated": true,
+    "ids_equal_common": true,
+    "paired_deltas": [
+      -0.005847554609709427,
+      -0.00046601092096398844,
+      0.006363620191259578
+    ]
+  }
+}

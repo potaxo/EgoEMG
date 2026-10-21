@@ -12,44 +12,32 @@
 
 ## Dataset storage rule
 
-- Keep dataset inputs on the user-designated data disk and read them directly
-  from their specified paths (currently `/mnt/d/egoemg/data/`, Windows
-  `D:\egoemg\data\`).
-- Without explicit user permission, do not copy, move, stage, or extract large
-  dataset files into the repository, `myself/`, the WSL filesystem, or temporary
-  working directories. This includes memmap arrays, dataset shards, videos,
-  crop/LMDB databases, archives, and bulk input caches or converted copies.
-  Faster loading or convenience alone does not authorize local duplication.
-- If a required data path is absent or inaccessible, inspect the designated
-  mount and existing directories first. If local duplication is essential,
-  explain the reason and expected storage size and obtain explicit permission
-  before proceeding; do not silently substitute another dataset.
-- Small inspection previews and experiment outputs (logs, metrics, plots,
-  predictions, and newly trained checkpoints) remain under `myself/` according
-  to the personal work directory rule. They must not serve as a bulk copy of
-  dataset inputs. Existing supplied checkpoints remain at their specified paths.
+- Read inputs directly from user-designated paths, currently `/mnt/d/egoemg/data/`
+  (Windows `D:\egoemg\data\`). Without explicit permission, do not copy, move, stage,
+  extract, or bulk-cache inputs in the repository, `myself/`, WSL, or temporary
+  directories. This covers memmaps, shards, videos, crop/LMDB databases,
+  archives, and converted copies; speed or convenience is not authorization.
+- If a path is unavailable, inspect the designated mount and directories first;
+  never silently substitute data. Essential duplication requires explicit
+  permission after explaining its purpose and expected size.
+- Small inspection previews and experiment outputs belong under `myself/`,
+  never as bulk input copies. Keep supplied checkpoints at their specified paths.
 
 ## Personal work directory rule
 
-- Put all newly added personal research/workflow files under repository-local
-  `myself/`, mirroring their original repository-relative paths. For example,
-  use `myself/scripts/analysis/`, `myself/docs/`, `myself/egoemg/tests/`, and
-  `myself/config/` for new scripts, documents, tests, and config deltas.
-- Put every generated artifact under `myself/` too: run logs, metrics, plots,
-  prediction files, experiment checkpoints, Hydra/logger output, reports,
-  temporary task files, and task-created caches. Use distinct run directories
-  under `myself/outputs/`; direct pytest caches to `myself/.pytest_cache` and
-  Python bytecode caches to `myself/.cache/pycache` (or disable bytecode writes).
-- Name folders clearly to describe their purpose and contents.
-- Reuse the original repository's code, configuration, normalization assets,
-  and supplied checkpoints as inputs. Resolve the repository root separately
-  from `myself/`; moving a script must not change its input asset paths.
-- Preserve existing repository/user work and dataset/checkpoint bytes. Do not
-  move unrelated existing files. Changes to this root `AGENTS.md` are allowed
-  for maintaining these instructions; follow explicit user requests for edits
-  to existing original files.
-- When moving or renaming run artifacts, preserve historical provenance and logs
-  as executed; record an old-to-new path mapping rather than rewriting history.
+- Add personal scripts, docs, tests, and config deltas under `myself/`, mirroring
+  repository paths: `scripts/analysis/`, `docs/`, `egoemg/tests/`, `config/`.
+- Keep all generated artifacts, temporary files, and caches under `myself/`.
+  Use distinct, descriptive `myself/outputs/<run-name>/` directories for full
+  runs, including logs, metrics, plots, predictions, checkpoints, and Hydra output.
+  Use `myself/.pytest_cache` and `myself/.cache/pycache`, or disable bytecode.
+- Reuse original code, configs, normalization assets, and supplied checkpoints.
+  Resolve the repository root separately from `myself/` so script relocation
+  does not change input paths.
+- Preserve user work, staged changes, dataset/checkpoint bytes, and unrelated
+  files. Maintain this root `AGENTS.md` as needed; edit other original files when
+  explicitly requested. For run renames, record old-to-new paths and preserve
+  historical logs and provenance as executed.
 
 ```bash
 conda activate egoemg
@@ -62,16 +50,43 @@ export EGOEMG_OUTPUT_DIR="$PWD/myself/outputs"
 export PYTHONPYCACHEPREFIX="$PWD/myself/.cache/pycache"
 ```
 
+## Research navigation and versioned results
+
+- Keep prose concise. The root `README.md` starts with links to
+  `myself/README.md` (goals, supported conclusions, limits, next steps) and
+  `myself/results/README.md` (results index). Update navigation as research changes.
+- `myself/docs/`: plans, protocols, reproduction commands, and workflow guidance;
+  link results instead of duplicating numerical reports. Preserve protocol
+  details already embedded in historical reports.
+- `myself/results/<date>_<study>/`: curated Markdown reports, important aggregate
+  CSV/JSON tables, and small explanatory figures from validated, completed runs.
+  Link them from docs and the results index, distinguishing different protocols
+  and older evidence. Keep links and figures usable on GitHub without outputs.
+- Full runs stay under ignored `myself/outputs/`. Export selected evidence into
+  new snapshots; never copy entire runs, unignore outputs/logs/caches/checkpoints,
+  or alter historical runs, reports, logs, or provenance.
+- Each snapshot needs a `README.md` (scope, valid runs, omissions, reproduction)
+  and a manifest mapping files to original repository-relative paths and SHA-256.
+  Preserve available execution hashes/settings. Record export date and checkout
+  commit separately: neither current code nor export commit is execution identity.
+  Label archived checks as historical, not newly run.
+- Select by purpose, not extension. Exclude inputs, per-window predictions and
+  features, parameter dumps/weights, bulk caches, full logs, Word/PDF duplicates,
+  and large media.
+- Before handoff, check links, snapshot/source hashes, and ignore rules; state
+  whether changes are local, committed, or pushed. Local files become available
+  through GitHub only after push.
+
 ## Commands
 
-Check a memmap dataset (preview shown here):
+Validate preview memmaps:
 
 ```bash
 python scripts/data/validate_memmap.py \
   --memmap-dir "$EGOEMG_MEMMAP_DIR" --no-checksums --allow-partial-sources
 ```
 
-Evaluate the released EMGFormer-M checkpoint (preview shown here):
+Evaluate released EMGFormer-M on preview data:
 
 ```bash
 export EGOEMG_RUN_DIR="$EGOEMG_ROOT/myself/outputs/preview_emgformer_middle_evaluation"
@@ -84,8 +99,8 @@ python -m egoemg.test_analysis \
   hydra.run.dir="$EGOEMG_RUN_DIR/hydra"
 ```
 
-For other experiments, select the matching local configuration, dataset, and
-checkpoint. Configuration names may differ across checkout versions.
+Use matching configs, datasets, and checkpoints for other experiments;
+config names depend on the checkout.
 
 ```bash
 PYTHONPYCACHEPREFIX="$PWD/myself/.cache/pycache" python -m pytest egoemg/tests -q -o cache_dir="$PWD/myself/.pytest_cache"

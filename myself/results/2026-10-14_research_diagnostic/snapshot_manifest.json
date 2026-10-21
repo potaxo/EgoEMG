@@ -1,0 +1,158 @@
+{
+  "schema_version": 1,
+  "export_date": "2026-10-21",
+  "timezone": "Asia/Tokyo",
+  "checkout_at_export": {
+    "commit": "2765a9bf69323b5b14cb1268627e1c9932794f71",
+    "branch": "reproduce/baseline",
+    "uncommitted_changes_present": true
+  },
+  "execution_identity_note": "The checkout commit describes export context only, not experiment execution. Original execution hashes/settings are preserved in the listed evidence. Experiments and archived checks were not rerun during export.",
+  "copy_policy": "Selected output artifacts copied byte-for-byte; original run directories unchanged. No dataset inputs, per-window predictions/features, weights, or full logs copied.",
+  "files": [
+    {
+      "snapshot_path": "common_gesture_summary.csv",
+      "source_path": "myself/outputs/2026-10-14_research_diagnostic_report/common_gesture_summary.csv",
+      "sha256": "1163b68054c435dceb7aa4e1a2b6b9d3eb799c4f4c337e1792d587e52f64651b",
+      "bytes": 3252
+    },
+    {
+      "snapshot_path": "figures/common_modalities.png",
+      "source_path": "myself/outputs/2026-10-14_research_diagnostic_report/figures/common_modalities.png",
+      "sha256": "f94ce602ac86d55c984770cc74e3ceff123d509262f050bb1c9717cbd4cab38e",
+      "bytes": 53782
+    },
+    {
+      "snapshot_path": "figures/gesture_transfer.png",
+      "source_path": "myself/outputs/2026-10-14_research_diagnostic_report/figures/gesture_transfer.png",
+      "sha256": "941d7618bb4e23641c55cb36a95a742efe1bb976da89d859a1c52b9e96f31989",
+      "bytes": 101505
+    },
+    {
+      "snapshot_path": "figures/pooling_pilot.png",
+      "source_path": "myself/outputs/2026-10-14_research_diagnostic_report/figures/pooling_pilot.png",
+      "sha256": "657d5681f6ff0a2554e2ee2e72586923c0503cc0f8c91b103e87111ef70c56d7",
+      "bytes": 108379
+    },
+    {
+      "snapshot_path": "figures/repeated_calibration.png",
+      "source_path": "myself/outputs/2026-10-14_research_diagnostic_report/figures/repeated_calibration.png",
+      "sha256": "e6fcf18ad3af6d342a42f794dccf62e8c5e6592e2e9e4161cd76ec6c4408285f",
+      "bytes": 37239
+    },
+    {
+      "snapshot_path": "independent_recalculation.json",
+      "source_path": "myself/outputs/2026-10-14_research_diagnostic_report/independent_recalculation.json",
+      "sha256": "68e9c53aba2ae51413b90394d558d60fe528786d6929854a7b273bc57104a845",
+      "bytes": 908
+    },
+    {
+      "snapshot_path": "pilot_gesture_summary.csv",
+      "source_path": "myself/outputs/2026-10-14_research_diagnostic_report/pilot_gesture_summary.csv",
+      "sha256": "d65152c36d808bbc4cb8809d6303a30daaffde1a7694d7497caa21ca7bcc1218",
+      "bytes": 2226
+    },
+    {
+      "snapshot_path": "pilot_paired_summary.csv",
+      "source_path": "myself/outputs/2026-10-14_research_diagnostic_report/pilot_paired_summary.csv",
+      "sha256": "91c978174d01d4d496ebeaa66aebfcc64806465e9ca5453d84197aa683d4dc14",
+      "bytes": 231
+    },
+    {
+      "snapshot_path": "repeated_gesture_class_summary.csv",
+      "source_path": "myself/outputs/2026-10-14_research_diagnostic_report/repeated_gesture_class_summary.csv",
+      "sha256": "68e664b7ace63648d23d2e0fc2b2fa03f56d11a269aac6b8747c1d566ebb25c8",
+      "bytes": 5972
+    },
+    {
+      "snapshot_path": "report.md",
+      "source_path": "myself/outputs/2026-10-14_research_diagnostic_report/report.md",
+      "sha256": "016b90ac7a995d55d5bcd3cd6d9f7d03fb3e50b482ab880d4784a3b8f80d09ca",
+      "bytes": 16144
+    },
+    {
+      "snapshot_path": "source_manifest.json",
+      "source_path": "myself/outputs/2026-10-14_research_diagnostic_report/source_manifest.json",
+      "sha256": "5de062d67eb14471b70700aef2e68a2631b2467e84b6b4c0891514966f3d2ad5",
+      "bytes": 6199
+    },
+    {
+      "snapshot_path": "validation_checks.json",
+      "source_path": "myself/outputs/2026-10-14_research_diagnostic_report/validation_checks.json",
+      "sha256": "c62ff60a2028eca5185fd4391f516370bfa2b30aa93ce54ef021856262566d39",
+      "bytes": 827
+    },
+    {
+      "snapshot_path": "evidence/wmh/settings.json",
+      "source_path": "myself/outputs/2026-10-14_repeated_gesture_wmh_02/settings.json",
+      "sha256": "258c5cc4e6cfae32034cc98e968c75f192c95001dae9526302fc8e284c019d98",
+      "bytes": 6965
+    },
+    {
+      "snapshot_path": "evidence/wmh/summary.csv",
+      "source_path": "myself/outputs/2026-10-14_repeated_gesture_wmh_02/summary.csv",
+      "sha256": "5e1dcf7c6dc84dc43030babdfd5e6a5a31a88b3f5b2e1bd7c4782b778aeb9f71",
+      "bytes": 1165
+    },
+    {
+      "snapshot_path": "evidence/zbk/settings.json",
+      "source_path": "myself/outputs/2026-10-14_repeated_gesture_zbk_02/settings.json",
+      "sha256": "c5318c5bf8482e452f2b03920c06999c22e1dd486bcd0e7e260d43e33a2e6b1b",
+      "bytes": 6901
+    },
+    {
+      "snapshot_path": "evidence/zbk/summary.csv",
+      "source_path": "myself/outputs/2026-10-14_repeated_gesture_zbk_02/summary.csv",
+      "sha256": "4ca8c1740608a6f11ab6cccf0f5e8b2a24d8b26a85dcc955304cf22fd52af942",
+      "bytes": 1181
+    },
+    {
+      "snapshot_path": "evidence/common/verification.json",
+      "source_path": "myself/outputs/2026-10-14_common_modality_wmh_03/verification.json",
+      "sha256": "c694dd08d5491f3ec9dde44f762d6305ac87e649e2a24b2260f8740509121f03",
+      "bytes": 7137
+    },
+    {
+      "snapshot_path": "evidence/common/metrics.csv",
+      "source_path": "myself/outputs/2026-10-14_common_modality_wmh_03/metrics.csv",
+      "sha256": "5a1a9ccae7cf331ad6df0d3e48296a670dec4a2cf0093ea8743daa8b7abb3329",
+      "bytes": 10869
+    },
+    {
+      "snapshot_path": "evidence/pilot/settings.json",
+      "source_path": "myself/outputs/2026-10-14_visual_guided_pool_wmh_01/settings.json",
+      "sha256": "60adafdd0c9ad6332d863e3dee11c0203a221f5698c40812e13df6bf956cbb9e",
+      "bytes": 1500
+    },
+    {
+      "snapshot_path": "evidence/pilot/metrics.csv",
+      "source_path": "myself/outputs/2026-10-14_visual_guided_pool_wmh_01/metrics.csv",
+      "sha256": "3759417b6e9d1c16e24dcb082ef3aa05be4fa8d9763771ad434f5bec6a822262",
+      "bytes": 8799
+    },
+    {
+      "snapshot_path": "evidence/pilot/emg_dependence.csv",
+      "source_path": "myself/outputs/2026-10-14_visual_guided_pool_wmh_01/emg_dependence.csv",
+      "sha256": "df8838049f4fc1b47e939dfc323f63f3584401fe55b963a1bb37ada44d2ef03e",
+      "bytes": 499
+    },
+    {
+      "snapshot_path": "evidence/pilot/training.csv",
+      "source_path": "myself/outputs/2026-10-14_visual_guided_pool_wmh_01/training.csv",
+      "sha256": "e5b48d60213037bc46a30ceece8fe71fcbae6ea8d4a252dc1f21ddd256583bea",
+      "bytes": 1340
+    },
+    {
+      "snapshot_path": "evidence/pilot/resources.json",
+      "source_path": "myself/outputs/2026-10-14_visual_guided_pool_wmh_01/resources.json",
+      "sha256": "1698b15cffce7af19939c4319865e06494322e35c32593bfa8eb9963f3958420",
+      "bytes": 531
+    },
+    {
+      "snapshot_path": "evidence/pilot/isolated_budget.json",
+      "source_path": "myself/outputs/2026-10-14_visual_guided_pool_wmh_01/isolated_budget.json",
+      "sha256": "9bcd14d0865eb314e615e6870b69010e30a7427a332e593e4ae5356ff44949e9",
+      "bytes": 1215
+    }
+  ]
+}

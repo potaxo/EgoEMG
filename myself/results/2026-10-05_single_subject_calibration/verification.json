@@ -1,0 +1,54 @@
+{
+  "pytest_command": [
+    "/home/potaxo/miniconda3/envs/egoemg/bin/python",
+    "-m",
+    "pytest",
+    "myself/egoemg/tests/test_single_subject_calibration_suite.py",
+    "myself/egoemg/tests/test_preview_calibration_smoke.py",
+    "egoemg/tests/test_release_eval_helpers.py",
+    "egoemg/tests/test_egoemg_memmap_dataset.py",
+    "egoemg/tests/test_metrics.py",
+    "egoemg/tests/test_rotary_attention_mask.py",
+    "-q",
+    "-o",
+    "cache_dir=/home/potaxo/research/egoemg/EgoEMG/myself/.pytest_cache",
+    "--basetemp=/home/potaxo/research/egoemg/EgoEMG/myself/outputs/single_subject_calibration_suite/test_tmp"
+  ],
+  "pytest_result": "44 passed, 15 existing dependency warnings in 4.17s",
+  "format_checks": [
+    "black --check",
+    "isort --profile black --check-only",
+    "git diff --check"
+  ],
+  "environment": {
+    "PYTHONDONTWRITEBYTECODE": "1"
+  },
+  "tiny_run": "/home/potaxo/research/egoemg/EgoEMG/myself/outputs/single_subject_calibration_suite/20261005T175500_91e78466",
+  "previous_full_run": "/home/potaxo/research/egoemg/EgoEMG/myself/outputs/single_subject_calibration_suite/20261005T174933_525ce256",
+  "previous_run_reason": "Preserved; contiguous trace visualization fix and expanded readable coverage generated with new source identity. Protocol and hyperparameters unchanged.",
+  "branch": "reproduce/baseline",
+  "commits_pushes_branch_changes": false,
+  "dataset_inputs_copied": false,
+  "remaining_commands": [],
+  "saved_output_verification_command": [
+    "/home/potaxo/miniconda3/envs/egoemg/bin/python",
+    "/home/potaxo/research/egoemg/EgoEMG/myself/outputs/single_subject_calibration_suite/20261005T175542_2718a2f5/verify_outputs.py"
+  ],
+  "resume_command": [
+    "/home/potaxo/miniconda3/envs/egoemg/bin/python",
+    "/home/potaxo/research/egoemg/EgoEMG/myself/scripts/analysis/single_subject_calibration_suite.py",
+    "--run-dir",
+    "/home/potaxo/research/egoemg/EgoEMG/myself/outputs/single_subject_calibration_suite/20261005T175542_2718a2f5",
+    "--phase",
+    "all"
+  ],
+  "resume_result": "All six stages reused, no GPU extraction repeated",
+  "plots_inspected": [
+    "per_joint.png",
+    "per_gesture.png",
+    "time_traces.png",
+    "crop_contact_sheet.png"
+  ],
+  "final_run_numeric_predictions_identical_to_previous_full_run": true,
+  "final_test_source": "myself/egoemg/tests/test_single_subject_calibration_suite.py"
+}

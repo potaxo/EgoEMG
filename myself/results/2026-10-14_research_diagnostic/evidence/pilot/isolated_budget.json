@@ -1,0 +1,39 @@
+{
+  "gpu": "NVIDIA GeForce RTX 4060 Laptop GPU",
+  "measurements": [
+    {
+      "model": "vision",
+      "batch_size": 8,
+      "repeats": 50,
+      "warmup": 10,
+      "median_batch_ms": 6.078451500002302,
+      "p95_batch_ms": 6.1871163500541115,
+      "median_amortized_ms_per_sample": 0.7598064375002878,
+      "peak_allocated_bytes": 157136384,
+      "parameters": 11450454
+    },
+    {
+      "model": "fusion",
+      "batch_size": 8,
+      "repeats": 50,
+      "warmup": 10,
+      "median_batch_ms": 11.523793000037585,
+      "p95_batch_ms": 12.42696550001483,
+      "median_amortized_ms_per_sample": 1.4404741250046982,
+      "peak_allocated_bytes": 173635072,
+      "parameters": 15474941
+    },
+    {
+      "model": "emg",
+      "batch_size": 8,
+      "repeats": 50,
+      "warmup": 10,
+      "median_batch_ms": 12.226869000073748,
+      "p95_batch_ms": 12.676123900041603,
+      "median_amortized_ms_per_sample": 1.5283586250092185,
+      "peak_allocated_bytes": 152305664,
+      "parameters": 6617382
+    }
+  ],
+  "convention": "One model resident; FP32 TF32 off; synchronized forward only; B=8; excludes I/O and transfers; outputs unused; same small batch repeated; no concurrent experiment process"
+}

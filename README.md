@@ -1,3 +1,6 @@
+> **个人研究**：个体校准、视觉监督校准与 EMG–视觉融合。
+> [研究导航](myself/README.md) · [实验报告与结果](myself/results/README.md)
+
 <p align="center">
   <img src="images/dataset_stats.png" width="100%" alt="EgoEMG dataset statistics">
 </p>
@@ -32,22 +35,19 @@
 
 ## ✨ Highlights
 
-- **📦 Multi-modal dataset & benchmark** — 53 participants, 18+ h of synchronized
-  recordings: bilateral wristband EMG, IMU, egocentric RGB, RGB-D, and mocap
-  joint angles.
-- **🧠 EMG-to-pose** — EMGFormer: **13.8°** Avg MAE on EgoEMG (M); **12.3°**
-  User+Stage MAE on the EMG2Pose benchmark (S) — ahead of all prior methods.
-- **👁️ Vision-to-pose** — **5.85°** with ResNet-18 on the egocentric webcam stream.
-- **🔀 EMG+vision fusion** — **5.41°** with ResNet-18 fusion: 7.5% better than
-  vision-only at only +3M parameters.
+- **📦 Dataset** — 53 participants, 18+ h of synchronized bilateral EMG, IMU,
+  egocentric RGB/RGB-D, and mocap joint angles.
+- **🧠 EMG-to-pose** — EMGFormer-M: **13.8°** on EgoEMG;
+  EMGFormer-S: **12.3°** User+Stage MAE on EMG2Pose.
+- **👁️ Vision-to-pose** — ResNet-18: **5.85°** MAE.
+- **🔀 Fusion** — **5.41°** MAE, 7.5% better than vision-only at +3M parameters.
 
 ## 🎯 Headline results
 
-MAE in degrees. \* = released-checkpoint values (reproduce with the commands
-in [Results and evaluation](#-results-and-evaluation)); unstarred values are
-paper-reported. Avg = average over the Gesture/User/Both test splits
-(per-sample-weighted for EMG-to-pose, unweighted split mean for vision and
-fusion); the EMG2Pose row follows the benchmark's User+Stage protocol.
+MAE (°); \* = released-checkpoint result, otherwise paper-reported.
+Avg covers Gesture/User/Both: sample-weighted for EMG, unweighted split mean
+for vision/fusion. EMG2Pose uses User+Stage.
+[Evaluation commands](#-results-and-evaluation).
 
 | Task | Split | Ours | Best baseline |
 |------|-------|------|---------------|
@@ -56,8 +56,7 @@ fusion); the EMG2Pose row follows the benchmark's User+Stage protocol.
 | Vision-to-pose on EgoEMG | Avg (Gesture/User/Both) | **5.85°** (ResNet-18) \* | — |
 | EMG+vision fusion on EgoEMG | Avg (Gesture/User/Both) | **5.41°** (ResNet-18) \* | 5.85° (vision-only) |
 
-Full per-method and per-split breakdowns are in the
-[Results and evaluation](#-results-and-evaluation) section below.
+[Full benchmark tables](#-results-and-evaluation) below.
 
 ## ⚙️ Setup
 
@@ -66,8 +65,8 @@ conda env create -f environment.yml && conda activate egoemg
 pip install -e '.[viz]'
 ```
 
-Download data and checkpoints with [Asset Setup](docs/ASSET_SETUP.md), then set
-`export EGOEMG_ROOT=/path/to/egoemg_assets`.
+Data and checkpoints: [Asset Setup](docs/ASSET_SETUP.md).
+Set `export EGOEMG_ROOT=/path/to/egoemg_assets`.
 
 ## 🚀 Training
 
@@ -94,13 +93,12 @@ python -m egoemg.train_pretrain \
   train=true eval=false 'trainer.devices=[0]'
 ```
 
-> **Hardware:** the EMG example uses six GPUs, fusion five. For a single-GPU
-> smoke run, set `trainer.devices=[0]` and reduce `batch_size`.
+> EMG/fusion examples use 6/5 GPUs. For a single-GPU smoke run,
+> set `trainer.devices=[0]` and reduce `batch_size`.
 
-Experiment configs live in `config/experiment/{emgformer,fusion,emg2pose}/`.
-For evaluation use `egoemg.test_analysis` (fusion configs default `train=true`).
-The EMG+vision fusion model (`MidFusionPoseFormer`) is detailed in
-[Fusion Architecture](docs/fusion_architecture.md).
+Configs: `config/experiment/{emgformer,fusion,emg2pose}/`.
+Evaluation: `egoemg.test_analysis` (fusion defaults to `train=true`).
+Model details: [Fusion Architecture](docs/fusion_architecture.md).
 
 ## 🎥 Visualization
 
@@ -121,9 +119,7 @@ python scripts/viz/visualize_dataset.py vision \
   --episode-id episode_000000 --stride 10 --max-frames 300
 ```
 
-Sample predictions on the preview shard's three episodes — a **vision +
-MANO-mesh overlay**, embedded for each as a native video player (uploaded via
-*Attach files*).
+Preview predictions: **vision + MANO-mesh overlays** for three episodes.
 
 <p align="center">
   <b>episode_000020 · wmh · train / user / gesture / both</b>
@@ -145,16 +141,13 @@ https://github.com/user-attachments/assets/66da0936-609e-4e83-9077-a626f9b1fe9b
 
 ### Preview / small dataset
 
-Every workflow above also runs end-to-end on a small **preview shard** instead
-of the full `EgoEMG_full_memmap`. It is a 3-episode, **v3-schema** memmap in the
-same **flat** layout as the published `dataset_egoemg_unified`, so it drops in as
-a mini dataset root: point the same commands at its `data/memmap_data`.
+Use the 3-episode preview for the same workflows: point commands at its
+`data/memmap_data`. It uses the published dataset's flat v3 memmap layout.
 
 > [!IMPORTANT]
-> Download the shard once — **Baidu Netdisk is the official release path**.
-> Open the share <https://pan.baidu.com/s/1aG2e-mHJkmP4KiYtYRcReA> (extraction
-> code `8059`), download the whole `dataset_egoemg_preview` folder under
-> `/EgoEMG_release/`, and place it at `$EGOEMG_ROOT/data/dataset_egoemg_preview`.
+> Official download: [Baidu Netdisk](https://pan.baidu.com/s/1aG2e-mHJkmP4KiYtYRcReA), code `8059`.
+> Download `/EgoEMG_release/dataset_egoemg_preview` to
+> `$EGOEMG_ROOT/data/dataset_egoemg_preview`.
 
 ```shell
 # EMG-to-pose eval (EMGFormer-M, 8-ch) on the shard
@@ -189,8 +182,7 @@ python -m egoemg.train experiment=emgformer/egoemg_emgformer_small \
 <details>
 <summary>Full benchmark tables</summary>
 
-\* marks values measured with the released checkpoints (commands below);
-other cells are paper-reported. MAE in degrees.
+MAE (°); \* = released checkpoint, otherwise paper-reported.
 
 **EMG-to-pose on EgoEMG** (per-user mean ± std; Avg = per-sample-weighted):
 
@@ -204,8 +196,7 @@ other cells are paper-reported. MAE in degrees.
 | NeuroPose | 6.4M | 15.8 ± 1.2 | 15.7 ± 1.3 | 16.3 ± 0.7 | 16.1 |
 | SensingDynamics | 1.0M | 16.2 ± 1.1 | 16.4 ± 0.3 | 16.7 ± 0.8 | 16.4 |
 
-**EMG-to-pose on the EMG2Pose benchmark** (per-user mean ± std across the
-User / Stage / User+Stage test splits):
+**EMG-to-pose on EMG2Pose** (per-user mean ± std):
 
 | Method | Params | User | Stage | User+Stage |
 |--------|--------|------|-------|------------|
@@ -237,8 +228,8 @@ frozen/fine-tuned; Δavg = fusion gain):
 
 ### Evaluation
 
-S/M/L in this README map to the `small`/`middle`/`large` config and
-checkpoint variants (e.g. `EMGFormer-M` → `egoemg_emgformer_middle.ckpt`).
+S/M/L = `small`/`middle`/`large` configs and checkpoints
+(e.g. M → `egoemg_emgformer_middle.ckpt`).
 
 ```shell
 export EGOEMG_ROOT=/absolute/path/to/dataset_root
@@ -288,13 +279,12 @@ assets/        EMG layout figures and normalization statistics
 
 ## 📜 License
 
-Code: **MIT**. Third-party material (incl. UmeTrack, CC-BY-NC-4.0) under
-their own terms — see [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md).
+Code: **MIT**. Third-party terms, including UmeTrack (CC-BY-NC-4.0):
+[THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md).
 
 ## 📖 Citing EgoEMG
 
-The paper is under review. Until a public version is available, cite this
-repository and the exact commit — GitHub renders
+Paper under review; cite this repository and exact commit via
 [CITATION.cff](CITATION.cff).
 
 <details>
@@ -311,6 +301,5 @@ repository and the exact commit — GitHub renders
 }
 ```
 
-> The preprint entry and full author list will be published here once the
-> paper is public.
+> Preprint citation and full author list will follow publication.
 </details>
