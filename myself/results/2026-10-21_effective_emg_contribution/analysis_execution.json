@@ -1,0 +1,11 @@
+{
+  "command": [
+    "myself/scripts/analysis/summarize_effective_emg.py",
+    "--run-dir",
+    "myself/outputs/2026-10-21_wmh_right_effective_emg_full_01"
+  ],
+  "script_sha256": "388869228b0f01cedeb44949ce0302e169045847eafc0a1b347fa14ca515a72d",
+  "script": "myself/scripts/analysis/summarize_effective_emg.py",
+  "time_tokyo": "2026-10-22T00:02:30.599266+09:00",
+  "method": "independent NumPy float64; no inference or data inputs"
+}

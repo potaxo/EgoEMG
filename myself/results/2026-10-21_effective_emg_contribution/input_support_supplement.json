@@ -1,0 +1,173 @@
+{
+  "timing": [
+    {
+      "episode": "episode_000020",
+      "rows": 1935926,
+      "span_seconds": 967.956702,
+      "span_implied_hz": 2000.011979874695,
+      "delta_us_quantiles": {
+        "0": 0.0,
+        "0.01": 0.0,
+        "0.5": 1.0,
+        "0.9": 2.0,
+        "0.99": 8517.0,
+        "1": 9697.0
+      },
+      "nonpositive_deltas": 967635,
+      "loader_timing": "uses row order and fixed center; no resampling from timestamp_us"
+    },
+    {
+      "episode": "episode_000008",
+      "rows": 1684309,
+      "span_seconds": 842.147779,
+      "span_implied_hz": 2000.0147741290903,
+      "delta_us_quantiles": {
+        "0": 0.0,
+        "0.01": 0.0,
+        "0.5": 1.0,
+        "0.9": 2.0,
+        "0.99": 8516.0,
+        "1": 9774.0
+      },
+      "nonpositive_deltas": 837246,
+      "loader_timing": "uses row order and fixed center; no resampling from timestamp_us"
+    }
+  ],
+  "nominal_sample_rate_hz": 2000,
+  "timing_interpretation": "episode duration agrees with nominal 2000Hz, but per-row timestamps arrive in bursts and are nonuniform; block durations are nominal row-time, not independent evenly timestamped observations",
+  "module_shared_keys_equal_after_namespace_migration": {
+    "fusion_proj_dim": true,
+    "provide_initial_pos": true,
+    "decoder.activation": true,
+    "head.dropout": true,
+    "head.in_channels": true,
+    "featurizer.se.mode": true,
+    "head._target_": true,
+    "decoder.out_proj": true,
+    "decoder.dropout": true,
+    "input_emg_length": true,
+    "decoder.ffn_dim": true,
+    "decoder._target_": true,
+    "_target_": true,
+    "head.out_channels": true,
+    "decoder.pos_encoding": true,
+    "vision_embed_dim": true,
+    "decoder.num_layers": true,
+    "featurizer.conv_blocks": true,
+    "featurizer.se.residual": true,
+    "mano_model_path": true,
+    "featurizer.se.enable": true,
+    "decoder.num_heads": true,
+    "force_zero_emg": true,
+    "decoder.model_dim": true,
+    "moddrop_prob": true,
+    "vision_backbone_type": true,
+    "featurizer.tds_stages": true,
+    "decoder.causal": true,
+    "skip_vision_backbone": true,
+    "decoder.norm_first": true,
+    "featurizer.se.reduction": true,
+    "out_channels": true,
+    "emg_feat_dim": true,
+    "head.activation": true,
+    "featurizer._target_": true,
+    "fusion_mode": true,
+    "vision_pretrained_checkpoint": false,
+    "head.hidden_sizes": true,
+    "decoder.in_channels": true
+  },
+  "module_shared_key_differences": {
+    "vision_pretrained_checkpoint": {
+      "checkpoint": "/home/xiziheng/develop/emg2pose/logs/fusion/vision_resnet/version_9/checkpoints/resnet-vision-epoch=011-val_mae=0.1022.ckpt",
+      "current": "/home/potaxo/research/egoemg/EgoEMG/checkpoints/vision_resnet18.ckpt"
+    }
+  },
+  "checkpoint_only_keys": {
+    "decoder.preset": "small"
+  },
+  "current_only_keys": {
+    "freeze_vision_branch": false,
+    "vision_trainable_prefixes": null,
+    "freeze_vision_head": false,
+    "lock_vision_batch_norm": false,
+    "token_dim": 256,
+    "token_num_heads": 8,
+    "token_num_layers": 3,
+    "token_ffn_dim": 512,
+    "token_dropout": 0.1,
+    "token_max_vision_grid_size": 16,
+    "cross_attention_dim": 256,
+    "cross_attention_num_heads": 8,
+    "cross_attention_ffn_dim": 512,
+    "cross_attention_dropout": 0.1,
+    "cross_attention_max_vision_grid_size": 16
+  },
+  "namespace": "checkpoint emg2pose -> current egoemg; shape-strict loading, not proof of original-source numerical identity",
+  "physical_emg_unit": "not specified by supplied manifest; do not infer microvolts",
+  "field_specs": {
+    "emg_right_filtered_paper": {
+      "filename": "emg_right_filtered_paper.dat",
+      "dtype": "float32",
+      "shape": [
+        4311609,
+        8
+      ]
+    },
+    "generated_joint_angles_right": {
+      "filename": "generated_joint_angles_right.dat",
+      "dtype": "float32",
+      "shape": [
+        4311609,
+        20
+      ]
+    },
+    "generated_label_valid": {
+      "filename": "generated_label_valid.dat",
+      "dtype": "bool",
+      "shape": [
+        4311609,
+        2
+      ]
+    },
+    "timestamp_us": {
+      "filename": "timestamp_us.dat",
+      "dtype": "int64",
+      "shape": [
+        4311609
+      ]
+    },
+    "image_head_frame_index": {
+      "filename": "image_head_frame_index.dat",
+      "dtype": "int32",
+      "shape": [
+        4311609
+      ]
+    },
+    "image_head_delta_ms": {
+      "filename": "image_head_delta_ms.dat",
+      "dtype": "int32",
+      "shape": [
+        4311609
+      ]
+    },
+    "image_head_stale": {
+      "filename": "image_head_stale.dat",
+      "dtype": "bool",
+      "shape": [
+        4311609
+      ]
+    }
+  },
+  "manifest_left_hand_strategy": "flip_local_z",
+  "right_hand_mirroring": "none in actual right-hand loader conversion",
+  "input_sha256": {
+    "/mnt/d/egoemg/data/dataset_egoemg_preview/data/memmap_data/manifest.json": "a053a0c5833468567172eedc8fa9e3c37c2c91c9972686603e9bc3d299aad7f6",
+    "/mnt/d/egoemg/data/dataset_egoemg_preview/data/memmap_data/metadata.npz": "28dadd13a974264035f8a77c90214a892c17cb0e6b1ea787f0007e5692156079"
+  },
+  "script_sha256": "1c1742a3a5927a10c506ec1ffab51d9aa5d3cedf4395192e6b460494e847cdee",
+  "command": [
+    "myself/scripts/analysis/supplement_effective_emg_inputs.py",
+    "--run-dir",
+    "myself/outputs/2026-10-21_wmh_right_effective_emg_full_01"
+  ]
+}

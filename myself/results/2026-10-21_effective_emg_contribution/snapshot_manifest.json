@@ -1,0 +1,161 @@
+{
+  "export_date": "2026-10-22T00:03:14.851492+09:00",
+  "checkout_commit": "c2a6038ccd5e89bc562b33b7d63b446335742739",
+  "execution_head": "c2a6038ccd5e89bc562b33b7d63b446335742739",
+  "execution_source": "myself/outputs/2026-10-21_wmh_right_effective_emg_full_01",
+  "note": "export date/checkout are not execution identity; settings includes actual scripts and assets hashes",
+  "files": [
+    {
+      "file": "analysis_execution.json",
+      "source": "myself/outputs/2026-10-21_wmh_right_effective_emg_full_01/analysis/analysis_execution.json",
+      "sha256": "3cf7d6172fe26524f266364afb4560c817dd4f91286b23ece0bee391273f6088"
+    },
+    {
+      "file": "artifact_verification.json",
+      "source": "myself/outputs/2026-10-21_wmh_right_effective_emg_full_01/analysis/artifact_verification.json",
+      "sha256": "81722c8eb771cd59eeaa7a741fa1030fc2152c65e42751e756f681e2e78284b2"
+    },
+    {
+      "file": "donor_summary.csv",
+      "source": "myself/outputs/2026-10-21_wmh_right_effective_emg_full_01/analysis/donor_summary.csv",
+      "sha256": "8330396d97e51b635bce6fcd601fedf46f54a3f60c34b6b89ce53586bd6907e6"
+    },
+    {
+      "file": "figures/emg_path.png",
+      "source": "myself/outputs/2026-10-21_wmh_right_effective_emg_full_01/analysis/figures/emg_path.png",
+      "sha256": "0ee29d055966cbfa757f9c48dbe9d1d47b41af3d97bd68685eb31f3fe6c0ad2c"
+    },
+    {
+      "file": "figures/group_gains.png",
+      "source": "myself/outputs/2026-10-21_wmh_right_effective_emg_full_01/analysis/figures/group_gains.png",
+      "sha256": "9d7062daa58b06395627fa31194945ab23728e4d840b9272165f688ee4e793c5"
+    },
+    {
+      "file": "figures/matched_training.png",
+      "source": "myself/outputs/2026-10-21_wmh_right_effective_emg_full_01/analysis/figures/matched_training.png",
+      "sha256": "409c7848d5ccb79c9ff499dbc9d19a95e6b8a123b42e4e7cd8be5c41381eb375"
+    },
+    {
+      "file": "figures/released_interventions.png",
+      "source": "myself/outputs/2026-10-21_wmh_right_effective_emg_full_01/analysis/figures/released_interventions.png",
+      "sha256": "b9eda419d4b9da946b8d43323ea15bfb0fac974d6544af264fe009b20dbf49d1"
+    },
+    {
+      "file": "fusion_checkpoint_hparams.json",
+      "source": "myself/outputs/2026-10-21_wmh_right_effective_emg_full_01/analysis/fusion_checkpoint_hparams.json",
+      "sha256": "4e69a1041b83e7b1a533fe309b7012f4fbc8f60a7d1395dd018641b686763f3f"
+    },
+    {
+      "file": "group_metrics.csv",
+      "source": "myself/outputs/2026-10-21_wmh_right_effective_emg_full_01/analysis/group_metrics.csv",
+      "sha256": "398a4980303a3f18af91a678e1abbab77e90e110adcd24489f25169d663478d1"
+    },
+    {
+      "file": "input_audit.json",
+      "source": "myself/outputs/2026-10-21_wmh_right_effective_emg_full_01/analysis/input_audit.json",
+      "sha256": "4080657c99069640ddcc578648bdf6c980cb0a053df950dba0d2c9f5d815c5d7"
+    },
+    {
+      "file": "input_audit.md",
+      "source": "myself/outputs/2026-10-21_wmh_right_effective_emg_full_01/analysis/input_audit.md",
+      "sha256": "41c4c2a7db1a32e34d0b3f4a1292548c6b4a1d934791d704ed3d2184154a5eae"
+    },
+    {
+      "file": "input_channels.csv",
+      "source": "myself/outputs/2026-10-21_wmh_right_effective_emg_full_01/analysis/input_channels.csv",
+      "sha256": "5f1cb48457bbdfeaa70c0ad124569b75683463070b07729d904bfde6401f2d31"
+    },
+    {
+      "file": "input_support_supplement.json",
+      "source": "myself/outputs/2026-10-21_wmh_right_effective_emg_full_01/analysis/input_support_supplement.json",
+      "sha256": "6251bd15af10f698363a2927add5cfbbea26b3eecd2ad51c17f2c9916fef4851"
+    },
+    {
+      "file": "main_metrics.csv",
+      "source": "myself/outputs/2026-10-21_wmh_right_effective_emg_full_01/analysis/main_metrics.csv",
+      "sha256": "c8646e0256011213548170fd785dd1909dd9c6cfca520c9f5d8932ac761f429a"
+    },
+    {
+      "file": "paired_summary.csv",
+      "source": "myself/outputs/2026-10-21_wmh_right_effective_emg_full_01/analysis/paired_summary.csv",
+      "sha256": "bca97f23c7b16880c73cfa65902c41a012107b3d91e9a53c3eed20d5a5b4b7bf"
+    },
+    {
+      "file": "paired_units.csv",
+      "source": "myself/outputs/2026-10-21_wmh_right_effective_emg_full_01/analysis/paired_units.csv",
+      "sha256": "bb4712982ff531b45e16d07d5cf6c18f95a446ce74ebb4f708d499d09011b6de"
+    },
+    {
+      "file": "path_trace.csv",
+      "source": "myself/outputs/2026-10-21_wmh_right_effective_emg_full_01/analysis/path_trace.csv",
+      "sha256": "066670907cc84771e0558ead45977b0ad0e352415359ac654c5db5ff22a32526"
+    },
+    {
+      "file": "path_trace.json",
+      "source": "myself/outputs/2026-10-21_wmh_right_effective_emg_full_01/analysis/path_trace.json",
+      "sha256": "aec8ad74788ea6946e50ad7d32204f82dbb8a6e626b0a30634baeeb1b4d0fece"
+    },
+    {
+      "file": "report.md",
+      "source": "myself/outputs/2026-10-21_wmh_right_effective_emg_full_01/analysis/report.md",
+      "sha256": "177d1da6358bef3d9204363c8255bc1a2c116e39d884c8253ee597aa33a8e1b9"
+    },
+    {
+      "file": "resolved_dataset.json",
+      "source": "myself/outputs/2026-10-21_wmh_right_effective_emg_full_01/analysis/resolved_dataset.json",
+      "sha256": "3fa3ffd7dbee9114a78c835a2099c08806a32ab158090a7dc94a2d8d57967649"
+    },
+    {
+      "file": "resolved_model.yaml",
+      "source": "myself/outputs/2026-10-21_wmh_right_effective_emg_full_01/analysis/resolved_model.yaml",
+      "sha256": "8268a07c13082d8305162fb60a8362879e762e59cdcba55cb5cdc8d7d78fe712"
+    },
+    {
+      "file": "settings.json",
+      "source": "myself/outputs/2026-10-21_wmh_right_effective_emg_full_01/analysis/settings.json",
+      "sha256": "9db297ca70d96cb4c1d73856eeb09089f22e843ba933aab41d054946ce1fc5f6"
+    },
+    {
+      "file": "test_results.txt",
+      "source": "myself/outputs/2026-10-21_wmh_right_effective_emg_full_01/analysis/test_results.txt",
+      "sha256": "20e29e8404ba6078132652e44ec9ca18411eb2705daeda75a398ef57d12ffd0b"
+    },
+    {
+      "file": "test_results_final.txt",
+      "source": "myself/outputs/2026-10-21_wmh_right_effective_emg_full_01/analysis/test_results_final.txt",
+      "sha256": "992e5316842e09c61738db93d99446f140bd628e4a432c326d7f370dad117054"
+    },
+    {
+      "file": "trace_execution.json",
+      "source": "myself/outputs/2026-10-21_wmh_right_effective_emg_full_01/analysis/trace_execution.json",
+      "sha256": "a93180b3f4617ef7cf108db29678bab690fe8b6a283b22aae23384938ffd5f33"
+    },
+    {
+      "file": "training_checks.json",
+      "source": "myself/outputs/2026-10-21_wmh_right_effective_emg_full_01/analysis/training_checks.json",
+      "sha256": "c0d5d26892902df6827db85d2d69f07c8a8ba66d7362209ee186f6f1c6ba2018"
+    },
+    {
+      "file": "training_history.csv",
+      "source": "myself/outputs/2026-10-21_wmh_right_effective_emg_full_01/analysis/training_history.csv",
+      "sha256": "dbdc1b46691de129246b49f5330add680d9437ea4e5ed4327efde18ed695eeb7"
+    },
+    {
+      "file": "validation.json",
+      "source": "myself/outputs/2026-10-21_wmh_right_effective_emg_full_01/analysis/validation.json",
+      "sha256": "5a16e3f7e3df1e360d3c63b430544220a59b493a832a31bd4b4be700f24046e9"
+    },
+    {
+      "file": "episode_000008_selection_audit.json",
+      "source": "myself/outputs/2026-10-21_wmh_right_effective_emg_full_01/episode_000008/selection_audit.json",
+      "sha256": "bcb642acf0f4dc185a646238ca5aba4f98a0a815bd476230657dcb48f1137cfd"
+    },
+    {
+      "file": "episode_000020_selection_audit.json",
+      "source": "myself/outputs/2026-10-21_wmh_right_effective_emg_full_01/episode_000020/selection_audit.json",
+      "sha256": "85c4180ddd85fd601f71bec740efe9207711f5052f76473f8d3480f0a72acca6"
+    }
+  ],
+  "diagnostic_supplement": "uniform_time_trace on 2026-10-22; original 2026-10-21 trace/training/predictions preserved",
+  "validation": "final 15 targeted tests pass; all 9 models evaluated; prediction-level independent recomputation complete"
+}

@@ -1,0 +1,444 @@
+{
+  "protocol": "historical 12000-row complete split support, stride 200; fusion support 7790",
+  "history_requested": null,
+  "history_used": false,
+  "rebuilt": true,
+  "center_difference": "no historical selection available",
+  "participant": "zbk",
+  "episode": "episode_000008",
+  "episode_bounds": [
+    1935926,
+    3620235
+  ],
+  "candidates": 6966,
+  "eligible": 6966,
+  "exclusions": {
+    "eligible": 6966
+  },
+  "counts": {
+    "T_all": 0,
+    "E": 6966
+  },
+  "coverage": {
+    "T_all": {
+      "centers": 0,
+      "support_union_rows": 0,
+      "support_union_seconds": 0.0,
+      "nominal_center_seconds": 0.0,
+      "support_unions": [],
+      "overlapping_supports": false
+    },
+    "E": {
+      "centers": 6966,
+      "support_union_rows": 1582770,
+      "support_union_seconds": 791.385,
+      "nominal_center_seconds": 696.6,
+      "support_unions": [
+        [
+          1938031,
+          2296021
+        ],
+        [
+          2300266,
+          2323256
+        ],
+        [
+          2327531,
+          2358321
+        ],
+        [
+          2362586,
+          2381576
+        ],
+        [
+          2385956,
+          2397146
+        ],
+        [
+          2401536,
+          2420526
+        ],
+        [
+          2424906,
+          2556896
+        ],
+        [
+          2561231,
+          2580221
+        ],
+        [
+          2584601,
+          2759391
+        ],
+        [
+          2763771,
+          2782761
+        ],
+        [
+          2787141,
+          2876331
+        ],
+        [
+          2880621,
+          2903611
+        ],
+        [
+          2907886,
+          2958076
+        ],
+        [
+          2962416,
+          2981406
+        ],
+        [
+          2985786,
+          3059376
+        ],
+        [
+          3063686,
+          3082676
+        ],
+        [
+          3087056,
+          3476046
+        ],
+        [
+          3480451,
+          3503441
+        ],
+        [
+          3507716,
+          3538506
+        ],
+        [
+          3542771,
+          3561761
+        ],
+        [
+          3566141,
+          3577331
+        ],
+        [
+          3581721,
+          3600711
+        ],
+        [
+          3605091,
+          3616281
+        ]
+      ],
+      "overlapping_supports": true
+    }
+  },
+  "original_intervals": [
+    {
+      "interval": 0,
+      "split": "user",
+      "split_id": 1,
+      "local_start": 0,
+      "local_end": 362235,
+      "rows": 362235,
+      "candidate_windows": 1752,
+      "eligible_windows": 1724,
+      "insufficient_length": false,
+      "exclusions": {
+        "invalid_center_supervision": 28
+      }
+    },
+    {
+      "interval": 1,
+      "split": "both",
+      "split_id": 3,
+      "local_start": 362235,
+      "local_end": 389500,
+      "rows": 27265,
+      "candidate_windows": 77,
+      "eligible_windows": 77,
+      "insufficient_length": false,
+      "exclusions": {}
+    },
+    {
+      "interval": 2,
+      "split": "user",
+      "split_id": 1,
+      "local_start": 389500,
+      "local_end": 424555,
+      "rows": 35055,
+      "candidate_windows": 116,
+      "eligible_windows": 116,
+      "insufficient_length": false,
+      "exclusions": {}
+    },
+    {
+      "interval": 3,
+      "split": "both",
+      "split_id": 3,
+      "local_start": 424555,
+      "local_end": 447925,
+      "rows": 23370,
+      "candidate_windows": 57,
+      "eligible_windows": 57,
+      "insufficient_length": false,
+      "exclusions": {}
+    },
+    {
+      "interval": 4,
+      "split": "user",
+      "split_id": 1,
+      "local_start": 447925,
+      "local_end": 463505,
+      "rows": 15580,
+      "candidate_windows": 18,
+      "eligible_windows": 18,
+      "insufficient_length": false,
+      "exclusions": {}
+    },
+    {
+      "interval": 5,
+      "split": "both",
+      "split_id": 3,
+      "local_start": 463505,
+      "local_end": 486875,
+      "rows": 23370,
+      "candidate_windows": 57,
+      "eligible_windows": 57,
+      "insufficient_length": false,
+      "exclusions": {}
+    },
+    {
+      "interval": 6,
+      "split": "user",
+      "split_id": 1,
+      "local_start": 486875,
+      "local_end": 623200,
+      "rows": 136325,
+      "candidate_windows": 622,
+      "eligible_windows": 596,
+      "insufficient_length": false,
+      "exclusions": {
+        "invalid_center_supervision": 26
+      }
+    },
+    {
+      "interval": 7,
+      "split": "both",
+      "split_id": 3,
+      "local_start": 623200,
+      "local_end": 646570,
+      "rows": 23370,
+      "candidate_windows": 57,
+      "eligible_windows": 57,
+      "insufficient_length": false,
+      "exclusions": {}
+    },
+    {
+      "interval": 8,
+      "split": "user",
+      "split_id": 1,
+      "local_start": 646570,
+      "local_end": 825740,
+      "rows": 179170,
+      "candidate_windows": 836,
+      "eligible_windows": 836,
+      "insufficient_length": false,
+      "exclusions": {}
+    },
+    {
+      "interval": 9,
+      "split": "both",
+      "split_id": 3,
+      "local_start": 825740,
+      "local_end": 849110,
+      "rows": 23370,
+      "candidate_windows": 57,
+      "eligible_windows": 57,
+      "insufficient_length": false,
+      "exclusions": {}
+    },
+    {
+      "interval": 10,
+      "split": "user",
+      "split_id": 1,
+      "local_start": 849110,
+      "local_end": 942590,
+      "rows": 93480,
+      "candidate_windows": 408,
+      "eligible_windows": 408,
+      "insufficient_length": false,
+      "exclusions": {}
+    },
+    {
+      "interval": 11,
+      "split": "both",
+      "split_id": 3,
+      "local_start": 942590,
+      "local_end": 969855,
+      "rows": 27265,
+      "candidate_windows": 77,
+      "eligible_windows": 77,
+      "insufficient_length": false,
+      "exclusions": {}
+    },
+    {
+      "interval": 12,
+      "split": "user",
+      "split_id": 1,
+      "local_start": 969855,
+      "local_end": 1024385,
+      "rows": 54530,
+      "candidate_windows": 213,
+      "eligible_windows": 213,
+      "insufficient_length": false,
+      "exclusions": {}
+    },
+    {
+      "interval": 13,
+      "split": "both",
+      "split_id": 3,
+      "local_start": 1024385,
+      "local_end": 1047755,
+      "rows": 23370,
+      "candidate_windows": 57,
+      "eligible_windows": 57,
+      "insufficient_length": false,
+      "exclusions": {}
+    },
+    {
+      "interval": 14,
+      "split": "user",
+      "split_id": 1,
+      "local_start": 1047755,
+      "local_end": 1125655,
+      "rows": 77900,
+      "candidate_windows": 330,
+      "eligible_windows": 330,
+      "insufficient_length": false,
+      "exclusions": {}
+    },
+    {
+      "interval": 15,
+      "split": "both",
+      "split_id": 3,
+      "local_start": 1125655,
+      "local_end": 1149025,
+      "rows": 23370,
+      "candidate_windows": 57,
+      "eligible_windows": 57,
+      "insufficient_length": false,
+      "exclusions": {}
+    },
+    {
+      "interval": 16,
+      "split": "user",
+      "split_id": 1,
+      "local_start": 1149025,
+      "local_end": 1542420,
+      "rows": 393395,
+      "candidate_windows": 1907,
+      "eligible_windows": 1886,
+      "insufficient_length": false,
+      "exclusions": {
+        "invalid_center_supervision": 21
+      }
+    },
+    {
+      "interval": 17,
+      "split": "both",
+      "split_id": 3,
+      "local_start": 1542420,
+      "local_end": 1569685,
+      "rows": 27265,
+      "candidate_windows": 77,
+      "eligible_windows": 77,
+      "insufficient_length": false,
+      "exclusions": {}
+    },
+    {
+      "interval": 18,
+      "split": "user",
+      "split_id": 1,
+      "local_start": 1569685,
+      "local_end": 1604740,
+      "rows": 35055,
+      "candidate_windows": 116,
+      "eligible_windows": 116,
+      "insufficient_length": false,
+      "exclusions": {}
+    },
+    {
+      "interval": 19,
+      "split": "both",
+      "split_id": 3,
+      "local_start": 1604740,
+      "local_end": 1628110,
+      "rows": 23370,
+      "candidate_windows": 57,
+      "eligible_windows": 57,
+      "insufficient_length": false,
+      "exclusions": {}
+    },
+    {
+      "interval": 20,
+      "split": "user",
+      "split_id": 1,
+      "local_start": 1628110,
+      "local_end": 1643690,
+      "rows": 15580,
+      "candidate_windows": 18,
+      "eligible_windows": 18,
+      "insufficient_length": false,
+      "exclusions": {}
+    },
+    {
+      "interval": 21,
+      "split": "both",
+      "split_id": 3,
+      "local_start": 1643690,
+      "local_end": 1667060,
+      "rows": 23370,
+      "candidate_windows": 57,
+      "eligible_windows": 57,
+      "insufficient_length": false,
+      "exclusions": {}
+    },
+    {
+      "interval": 22,
+      "split": "user",
+      "split_id": 1,
+      "local_start": 1667060,
+      "local_end": 1682640,
+      "rows": 15580,
+      "candidate_windows": 18,
+      "eligible_windows": 18,
+      "insufficient_length": false,
+      "exclusions": {}
+    },
+    {
+      "interval": 23,
+      "split": "train",
+      "split_id": 0,
+      "local_start": 1682640,
+      "local_end": 1684309,
+      "rows": 1669,
+      "candidate_windows": 0,
+      "eligible_windows": 0,
+      "insufficient_length": true,
+      "exclusions": {}
+    }
+  ],
+  "complete_support_train_eval_isolated": true,
+  "block_definition": "30s nominal row-time center bins split at original split boundaries; windows may overlap block borders",
+  "donor_definition": "same participant/episode/right hand/pool/original split, seeded bijection, complete supports disjoint; different continuous center execution preferred",
+  "donor_different_execution": {
+    "T_all": {
+      "101": null,
+      "102": null,
+      "103": null
+    },
+    "E": {
+      "101": 1.0,
+      "102": 1.0,
+      "103": 1.0
+    }
+  }
+}

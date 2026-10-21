@@ -1,0 +1,12 @@
+{
+  "command": [
+    "myself/scripts/analysis/trace_effective_emg_uniform_time.py",
+    "--run-dir",
+    "myself/outputs/2026-10-21_wmh_right_effective_emg_full_01"
+  ],
+  "source_sha256": {
+    "myself/scripts/analysis/trace_effective_emg_uniform_time.py": "d378dc0154ab2a9b5391f2515b4a158b6cdbb2273baba95e409502776129fc04",
+    "myself/scripts/analysis/effective_emg_contribution.py": "65b4063709fe77d14378daca45ae73ddaa8b55ce534bdbc0420068c7cbf82b3b"
+  },
+  "note": "diagnostic-only supplement: original full run trace and every training/prediction artifact preserved; no model updates"
+}

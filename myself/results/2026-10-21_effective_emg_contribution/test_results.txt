@@ -1,0 +1,30 @@
+..............                                                           [100%]
+=============================== warnings summary ===============================
+myself/egoemg/tests/test_effective_emg_contribution.py::test_independent_recompute_masks_and_group_weighting
+  /home/potaxo/miniconda3/envs/egoemg/lib/python3.11/site-packages/matplotlib/_fontconfig_pattern.py:64: PyparsingDeprecationWarning: 'oneOf' deprecated - use 'one_of'
+    prop = Group((name + Suppress("=") + comma_separated(value)) | oneOf(_CONSTANTS))
+
+myself/egoemg/tests/test_effective_emg_contribution.py::test_independent_recompute_masks_and_group_weighting
+myself/egoemg/tests/test_effective_emg_contribution.py::test_independent_recompute_masks_and_group_weighting
+myself/egoemg/tests/test_effective_emg_contribution.py::test_independent_recompute_masks_and_group_weighting
+myself/egoemg/tests/test_effective_emg_contribution.py::test_independent_recompute_masks_and_group_weighting
+myself/egoemg/tests/test_effective_emg_contribution.py::test_independent_recompute_masks_and_group_weighting
+myself/egoemg/tests/test_effective_emg_contribution.py::test_independent_recompute_masks_and_group_weighting
+  /home/potaxo/miniconda3/envs/egoemg/lib/python3.11/site-packages/matplotlib/_fontconfig_pattern.py:85: PyparsingDeprecationWarning: 'parseString' deprecated - use 'parse_string'
+    parse = parser.parseString(pattern)
+
+myself/egoemg/tests/test_effective_emg_contribution.py::test_independent_recompute_masks_and_group_weighting
+myself/egoemg/tests/test_effective_emg_contribution.py::test_independent_recompute_masks_and_group_weighting
+myself/egoemg/tests/test_effective_emg_contribution.py::test_independent_recompute_masks_and_group_weighting
+myself/egoemg/tests/test_effective_emg_contribution.py::test_independent_recompute_masks_and_group_weighting
+myself/egoemg/tests/test_effective_emg_contribution.py::test_independent_recompute_masks_and_group_weighting
+myself/egoemg/tests/test_effective_emg_contribution.py::test_independent_recompute_masks_and_group_weighting
+  /home/potaxo/miniconda3/envs/egoemg/lib/python3.11/site-packages/matplotlib/_fontconfig_pattern.py:89: PyparsingDeprecationWarning: 'resetCache' deprecated - use 'reset_cache'
+    parser.resetCache()
+
+myself/egoemg/tests/test_effective_emg_contribution.py::test_independent_recompute_masks_and_group_weighting
+  /home/potaxo/miniconda3/envs/egoemg/lib/python3.11/site-packages/matplotlib/_mathtext.py:45: PyparsingDeprecationWarning: 'enablePackrat' deprecated - use 'enable_packrat'
+    ParserElement.enablePackrat()
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+14 passed, 14 warnings in 1.54s

@@ -1,0 +1,438 @@
+{
+  "module_conf": {
+    "featurizer": {
+      "_target_": "emg2pose.models.featurizers.tds.TdsNetwork",
+      "se": {
+        "enable": true,
+        "reduction": 4,
+        "residual": true,
+        "mode": "global"
+      },
+      "conv_blocks": [
+        {
+          "_target_": "emg2pose.models.featurizers.tds.Conv1dBlock",
+          "in_channels": 16,
+          "out_channels": 256,
+          "kernel_size": 11,
+          "stride": 5
+        },
+        {
+          "_target_": "emg2pose.models.featurizers.tds.Conv1dBlock",
+          "in_channels": 256,
+          "out_channels": 256,
+          "kernel_size": 5,
+          "stride": 2
+        }
+      ],
+      "tds_stages": [
+        {
+          "_target_": "emg2pose.models.featurizers.tds.TdsStage",
+          "in_channels": 256,
+          "in_conv_kernel_width": 9,
+          "in_conv_stride": 5,
+          "num_blocks": 1,
+          "channels": 8,
+          "feature_width": 32,
+          "kernel_width": 5
+        },
+        {
+          "_target_": "emg2pose.models.featurizers.tds.TdsStage",
+          "in_channels": 256,
+          "in_conv_kernel_width": 3,
+          "in_conv_stride": 1,
+          "num_blocks": 1,
+          "channels": 8,
+          "feature_width": 32,
+          "kernel_width": 3
+        }
+      ]
+    },
+    "decoder": {
+      "_target_": "emg2pose.models.decoders.transformer.TransformerDecoder",
+      "in_channels": 256,
+      "model_dim": 256,
+      "num_heads": 4,
+      "num_layers": 3,
+      "ffn_dim": 512,
+      "dropout": 0.15,
+      "causal": false,
+      "activation": "relu",
+      "norm_first": true,
+      "pos_encoding": "rope",
+      "out_proj": true,
+      "preset": "small"
+    },
+    "head": {
+      "_target_": "emg2pose.models.heads.mlp.MLPHead",
+      "in_channels": 256,
+      "out_channels": 22,
+      "hidden_sizes": [
+        512
+      ],
+      "activation": "relu",
+      "dropout": 0.1
+    },
+    "_target_": "emg2pose.models.modules.mid_fusion.MidFusionPoseFormer",
+    "out_channels": 22,
+    "provide_initial_pos": false,
+    "vision_embed_dim": 512,
+    "emg_feat_dim": 256,
+    "fusion_proj_dim": 256,
+    "vision_pretrained_checkpoint": "/home/xiziheng/develop/emg2pose/logs/fusion/vision_resnet/version_9/checkpoints/resnet-vision-epoch=011-val_mae=0.1022.ckpt",
+    "mano_model_path": null,
+    "vision_freeze": {},
+    "fusion_mode": "center_supervised",
+    "skip_vision_backbone": false,
+    "moddrop_prob": 0.0,
+    "input_emg_length": null,
+    "force_zero_emg": false,
+    "vision_backbone_type": "resnet18"
+  },
+  "optimizer_conf": {
+    "_target_": "torch.optim.Adam",
+    "lr": 0.0001,
+    "betas": [
+      0.9,
+      0.999
+    ],
+    "eps": 1e-08,
+    "weight_decay": 0.0001,
+    "amsgrad": false
+  },
+  "lr_scheduler_conf": {
+    "scheduler": {
+      "_target_": "torch.optim.lr_scheduler.CosineAnnealingLR",
+      "T_max": 100,
+      "eta_min": 1e-05
+    },
+    "interval": "epoch",
+    "frequency": 1
+  },
+  "loss_weights": {
+    "mae": 1.0,
+    "fingertip_distance": 0.01,
+    "delta_reg": 0.0
+  },
+  "task_type": "regression",
+  "ignore_index": -100,
+  "label_smoothing": 0.0,
+  "gumbel_recon": null,
+  "pretrained_checkpoint": null,
+  "pretrained_strict": false,
+  "pretrained_emg_checkpoint": "/home/xiziheng/develop/emg2pose/logs/2026-04-30/23-28-41_emg2pose/regression_emgformer_small_aggressive_egoemg/version_0/checkpoints/egoemg-small-epoch=007-val_mae=0.2625.ckpt",
+  "freeze_backbone": false,
+  "ignore_head_tail_dims": 0,
+  "datamodule": {
+    "_target_": "emg2pose.datamodule.WindowedEmgDataModule",
+    "dataset_conf": {
+      "train": [
+        {
+          "_target_": "emg2pose.datasets.egoemg_memmap_dataset.EgoEmgMemmapDataset",
+          "memmap_dir": "/home/xiziheng/develop/emg2pose/data/EgoEMG_memmap",
+          "window_length": 7790,
+          "stride": 400,
+          "allowed_splits": [
+            "train"
+          ],
+          "modalities": [
+            "emg",
+            "joint_angles",
+            "labels"
+          ],
+          "target_hand": "left",
+          "emg_field_preference": "filtered",
+          "emg_layout": "emg2pose_interpolate16",
+          "emg2pose_channel_indices_1based": [
+            11,
+            13,
+            1,
+            2,
+            3,
+            5,
+            6,
+            7
+          ],
+          "channel_interpolate": false,
+          "norm_mode": "per-dataset",
+          "norm_stats_path": "/home/xiziheng/develop/emg2pose/assets/per_dataset_norm_stats.json",
+          "dataset_name": "egoemg",
+          "jitter": true,
+          "mano_npy_dir": null,
+          "video_root": null,
+          "allintra_root": null,
+          "vision_patch_size": 256,
+          "vision_num_frames": 1,
+          "vision_frame_stride": 1,
+          "vision_frame_selection": "center",
+          "per_episode_crops_dir": "/mnt/nvme/xiziheng/EgoEMG_v2_crops",
+          "cached_vit_features_dir": null,
+          "preload_features": false,
+          "skip_emg_loading": false,
+          "center_target_only": true,
+          "skip_fields": null
+        },
+        {
+          "_target_": "emg2pose.datasets.egoemg_memmap_dataset.EgoEmgMemmapDataset",
+          "memmap_dir": "/home/xiziheng/develop/emg2pose/data/EgoEMG_memmap",
+          "window_length": 7790,
+          "stride": 400,
+          "allowed_splits": [
+            "train"
+          ],
+          "modalities": [
+            "emg",
+            "joint_angles",
+            "labels"
+          ],
+          "target_hand": "right",
+          "emg_field_preference": "filtered",
+          "emg_layout": "emg2pose_interpolate16",
+          "emg2pose_channel_indices_1based": [
+            11,
+            13,
+            1,
+            2,
+            3,
+            5,
+            6,
+            7
+          ],
+          "channel_interpolate": false,
+          "norm_mode": "per-dataset",
+          "norm_stats_path": "/home/xiziheng/develop/emg2pose/assets/per_dataset_norm_stats.json",
+          "dataset_name": "egoemg",
+          "jitter": true,
+          "mano_npy_dir": null,
+          "video_root": null,
+          "allintra_root": null,
+          "vision_patch_size": 256,
+          "vision_num_frames": 1,
+          "vision_frame_stride": 1,
+          "vision_frame_selection": "center",
+          "per_episode_crops_dir": "/mnt/nvme/xiziheng/EgoEMG_v2_crops",
+          "cached_vit_features_dir": null,
+          "preload_features": false,
+          "skip_emg_loading": false,
+          "center_target_only": true,
+          "skip_fields": null
+        }
+      ],
+      "val": [
+        {
+          "_target_": "emg2pose.datasets.egoemg_memmap_dataset.EgoEmgMemmapDataset",
+          "memmap_dir": "/home/xiziheng/develop/emg2pose/data/EgoEMG_memmap",
+          "window_length": 7790,
+          "stride": 7790,
+          "allowed_splits": [
+            "user",
+            "gesture",
+            "both"
+          ],
+          "modalities": [
+            "emg",
+            "joint_angles",
+            "labels"
+          ],
+          "target_hand": "left",
+          "emg_field_preference": "filtered",
+          "emg_layout": "emg2pose_interpolate16",
+          "emg2pose_channel_indices_1based": [
+            11,
+            13,
+            1,
+            2,
+            3,
+            5,
+            6,
+            7
+          ],
+          "channel_interpolate": false,
+          "norm_mode": "per-dataset",
+          "norm_stats_path": "/home/xiziheng/develop/emg2pose/assets/per_dataset_norm_stats.json",
+          "dataset_name": "egoemg",
+          "mano_npy_dir": null,
+          "video_root": null,
+          "allintra_root": null,
+          "vision_patch_size": 256,
+          "vision_num_frames": 1,
+          "vision_frame_stride": 1,
+          "vision_frame_selection": "center",
+          "per_episode_crops_dir": "/mnt/nvme/xiziheng/EgoEMG_v2_crops",
+          "cached_vit_features_dir": null,
+          "preload_features": false,
+          "skip_emg_loading": false,
+          "center_target_only": true,
+          "skip_fields": null
+        },
+        {
+          "_target_": "emg2pose.datasets.egoemg_memmap_dataset.EgoEmgMemmapDataset",
+          "memmap_dir": "/home/xiziheng/develop/emg2pose/data/EgoEMG_memmap",
+          "window_length": 7790,
+          "stride": 7790,
+          "allowed_splits": [
+            "user",
+            "gesture",
+            "both"
+          ],
+          "modalities": [
+            "emg",
+            "joint_angles",
+            "labels"
+          ],
+          "target_hand": "right",
+          "emg_field_preference": "filtered",
+          "emg_layout": "emg2pose_interpolate16",
+          "emg2pose_channel_indices_1based": [
+            11,
+            13,
+            1,
+            2,
+            3,
+            5,
+            6,
+            7
+          ],
+          "channel_interpolate": false,
+          "norm_mode": "per-dataset",
+          "norm_stats_path": "/home/xiziheng/develop/emg2pose/assets/per_dataset_norm_stats.json",
+          "dataset_name": "egoemg",
+          "mano_npy_dir": null,
+          "video_root": null,
+          "allintra_root": null,
+          "vision_patch_size": 256,
+          "vision_num_frames": 1,
+          "vision_frame_stride": 1,
+          "vision_frame_selection": "center",
+          "per_episode_crops_dir": "/mnt/nvme/xiziheng/EgoEMG_v2_crops",
+          "cached_vit_features_dir": null,
+          "preload_features": false,
+          "skip_emg_loading": false,
+          "center_target_only": true,
+          "skip_fields": null
+        }
+      ],
+      "test": [
+        {
+          "_target_": "emg2pose.datasets.egoemg_memmap_dataset.EgoEmgMemmapDataset",
+          "memmap_dir": "/home/xiziheng/develop/emg2pose/data/EgoEMG_memmap",
+          "window_length": 7790,
+          "stride": 7790,
+          "allowed_splits": [
+            "user",
+            "gesture",
+            "both"
+          ],
+          "modalities": [
+            "emg",
+            "joint_angles",
+            "labels"
+          ],
+          "target_hand": "left",
+          "emg_field_preference": "filtered",
+          "emg_layout": "emg2pose_interpolate16",
+          "emg2pose_channel_indices_1based": [
+            11,
+            13,
+            1,
+            2,
+            3,
+            5,
+            6,
+            7
+          ],
+          "channel_interpolate": false,
+          "norm_mode": "per-dataset",
+          "norm_stats_path": "/home/xiziheng/develop/emg2pose/assets/per_dataset_norm_stats.json",
+          "dataset_name": "egoemg",
+          "mano_npy_dir": null,
+          "video_root": null,
+          "allintra_root": null,
+          "vision_patch_size": 256,
+          "vision_num_frames": 1,
+          "vision_frame_stride": 1,
+          "vision_frame_selection": "center",
+          "per_episode_crops_dir": "/mnt/nvme/xiziheng/EgoEMG_v2_crops",
+          "cached_vit_features_dir": null,
+          "preload_features": false,
+          "skip_emg_loading": false,
+          "center_target_only": true,
+          "skip_fields": null
+        },
+        {
+          "_target_": "emg2pose.datasets.egoemg_memmap_dataset.EgoEmgMemmapDataset",
+          "memmap_dir": "/home/xiziheng/develop/emg2pose/data/EgoEMG_memmap",
+          "window_length": 7790,
+          "stride": 7790,
+          "allowed_splits": [
+            "user",
+            "gesture",
+            "both"
+          ],
+          "modalities": [
+            "emg",
+            "joint_angles",
+            "labels"
+          ],
+          "target_hand": "right",
+          "emg_field_preference": "filtered",
+          "emg_layout": "emg2pose_interpolate16",
+          "emg2pose_channel_indices_1based": [
+            11,
+            13,
+            1,
+            2,
+            3,
+            5,
+            6,
+            7
+          ],
+          "channel_interpolate": false,
+          "norm_mode": "per-dataset",
+          "norm_stats_path": "/home/xiziheng/develop/emg2pose/assets/per_dataset_norm_stats.json",
+          "dataset_name": "egoemg",
+          "mano_npy_dir": null,
+          "video_root": null,
+          "allintra_root": null,
+          "vision_patch_size": 256,
+          "vision_num_frames": 1,
+          "vision_frame_stride": 1,
+          "vision_frame_selection": "center",
+          "per_episode_crops_dir": "/mnt/nvme/xiziheng/EgoEMG_v2_crops",
+          "cached_vit_features_dir": null,
+          "preload_features": false,
+          "skip_emg_loading": false,
+          "center_target_only": true,
+          "skip_fields": null
+        }
+      ]
+    },
+    "window_length": 7790,
+    "val_test_window_length": 7790,
+    "stride": 400,
+    "val_test_stride": 7790,
+    "padding": [
+      0,
+      0
+    ],
+    "pin_memory": true,
+    "persistent_workers": true,
+    "prefetch_factor": 2,
+    "skip_ik_failures": false,
+    "max_open_files": 32,
+    "norm_mode": "per-dataset",
+    "norm_stats_path": null,
+    "per_dataset_norm_stats_path": "/home/xiziheng/develop/emg2pose/assets/per_dataset_norm_stats.json",
+    "norm_eps": 1e-06,
+    "dataset_repeat": 2
+  },
+  "stage2_vision_checkpoint": null,
+  "component_lr_scales": {
+    "featurizer": 1.0,
+    "decoder": 1.0,
+    "vision_backbone": 1.0,
+    "vision_proj": 1.0,
+    "fusion_proj": 1.0,
+    "head": 1.0,
+    "head_vision": 1.0
+  }
+}

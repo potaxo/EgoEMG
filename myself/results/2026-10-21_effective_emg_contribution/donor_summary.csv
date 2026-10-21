@@ -1,0 +1,13 @@
+episode,pool,mapping_seed,centers,different_execution,different_class,minimum_center_distance_rows
+episode_000008,T_all,101,0,0,0,
+episode_000008,T_all,102,0,0,0,
+episode_000008,T_all,103,0,0,0,
+episode_000008,E,101,6966,6966,6874,7800
+episode_000008,E,102,6966,6966,6884,7800
+episode_000008,E,103,6966,6966,6871,7800
+episode_000020,T_all,101,4174,4174,4093,7800
+episode_000020,T_all,102,4174,4174,4092,7800
+episode_000020,T_all,103,4174,4174,4092,7800
+episode_000020,E,101,3507,3507,3392,7800
+episode_000020,E,102,3507,3507,3383,7800
+episode_000020,E,103,3507,3507,3386,7800

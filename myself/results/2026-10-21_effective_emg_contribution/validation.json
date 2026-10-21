@@ -1,0 +1,116 @@
+{
+  "independent_prediction_recomputation": true,
+  "float64": true,
+  "all_execution_hashes_verified": true,
+  "paired_input_checks": [
+    {
+      "episode": "episode_000020",
+      "seed": "released",
+      "centers_equal": true,
+      "reference_equal": true,
+      "mask_equal": true,
+      "frame_equal": true
+    },
+    {
+      "episode": "episode_000020",
+      "seed": "vision",
+      "centers_equal": true,
+      "reference_equal": true,
+      "mask_equal": true,
+      "frame_equal": true
+    },
+    {
+      "episode": "episode_000020",
+      "seed": "42",
+      "centers_equal": true,
+      "reference_equal": true,
+      "mask_equal": true,
+      "frame_equal": true
+    },
+    {
+      "episode": "episode_000020",
+      "seed": "43",
+      "centers_equal": true,
+      "reference_equal": true,
+      "mask_equal": true,
+      "frame_equal": true
+    },
+    {
+      "episode": "episode_000020",
+      "seed": "44",
+      "centers_equal": true,
+      "reference_equal": true,
+      "mask_equal": true,
+      "frame_equal": true
+    },
+    {
+      "episode": "episode_000008",
+      "seed": "released",
+      "centers_equal": true,
+      "reference_equal": true,
+      "mask_equal": true,
+      "frame_equal": true
+    },
+    {
+      "episode": "episode_000008",
+      "seed": "vision",
+      "centers_equal": true,
+      "reference_equal": true,
+      "mask_equal": true,
+      "frame_equal": true
+    },
+    {
+      "episode": "episode_000008",
+      "seed": "42",
+      "centers_equal": true,
+      "reference_equal": true,
+      "mask_equal": true,
+      "frame_equal": true
+    },
+    {
+      "episode": "episode_000008",
+      "seed": "43",
+      "centers_equal": true,
+      "reference_equal": true,
+      "mask_equal": true,
+      "frame_equal": true
+    },
+    {
+      "episode": "episode_000008",
+      "seed": "44",
+      "centers_equal": true,
+      "reference_equal": true,
+      "mask_equal": true,
+      "frame_equal": true
+    }
+  ],
+  "bootstrap_units": "30s continuous center blocks or action execution; 10000 draws; seed mean before resampling",
+  "seed_variability_separate": true,
+  "source_predictions_sha256": {
+    "myself/outputs/2026-10-21_wmh_right_effective_emg_full_01/episode_000008/T_all_selection.npz": "0c6d6ba942b62c2d8395f7c25fbb58faf2c06dd630d526852a84d127304dceb1",
+    "myself/outputs/2026-10-21_wmh_right_effective_emg_full_01/episode_000008/trained_seed43.npz": "16b756a192a6a8372875ae6fe5dc1890c6088aaf8cdbd143484e112d454bed60",
+    "myself/outputs/2026-10-21_wmh_right_effective_emg_full_01/episode_000008/T_all_donors.npz": "fef064e88028f0290c7078428f571853f756bcd717a2aa8c9819d2b1911d3c59",
+    "myself/outputs/2026-10-21_wmh_right_effective_emg_full_01/episode_000008/vision.npz": "14b926c6642a63d680dd63a41f71897366f4cc899d26fd73459af7ec0c794c48",
+    "myself/outputs/2026-10-21_wmh_right_effective_emg_full_01/episode_000008/trained_seed42.npz": "3d699d1ac2c24a98dbfd919f2a544ec03803ace83c11108357123a37dccbe08f",
+    "myself/outputs/2026-10-21_wmh_right_effective_emg_full_01/episode_000008/released.npz": "5f322e00aea19cdcbb464557c152f2432cce439adbe33382eb1677f9731edebc",
+    "myself/outputs/2026-10-21_wmh_right_effective_emg_full_01/episode_000008/E_selection.npz": "9a9d09e13e30c26de5b2cecf5f1774cad53f36a2b89f88edc5410791ca3114ad",
+    "myself/outputs/2026-10-21_wmh_right_effective_emg_full_01/episode_000008/trained_seed44.npz": "592a14ea5caca868ba38a7db9d0786768639251ce88db2eb25f549689542b80a",
+    "myself/outputs/2026-10-21_wmh_right_effective_emg_full_01/episode_000008/E_donors.npz": "2ea9313287c137bdf77e2fc39c46d0cec21903a4b10d422e04b52fcc08726cd8",
+    "myself/outputs/2026-10-21_wmh_right_effective_emg_full_01/episode_000020/T_all_selection.npz": "6fd591ce41fc2467f4839401152b3fe825a87b61dca161d9293b73f65c700f08",
+    "myself/outputs/2026-10-21_wmh_right_effective_emg_full_01/episode_000020/trained_seed43.npz": "05151db155ef94dbf5a6db2a39df74e543d256f5b5947b554199dda3b7a1bbf6",
+    "myself/outputs/2026-10-21_wmh_right_effective_emg_full_01/episode_000020/T_all_donors.npz": "90586ad8f0c3af1cebc8c42bb6095347624f36b260a4ec6e00587319c610a0f1",
+    "myself/outputs/2026-10-21_wmh_right_effective_emg_full_01/episode_000020/vision.npz": "a6afe006f1be1d54529dc85be59a0f05139725bc44328bd05802ede969595fa2",
+    "myself/outputs/2026-10-21_wmh_right_effective_emg_full_01/episode_000020/trained_seed42.npz": "ff31f61d18115971ef7ef5a4324298f23f0a02c766ebf0cec830c19478488ea4",
+    "myself/outputs/2026-10-21_wmh_right_effective_emg_full_01/episode_000020/released.npz": "7e1a0e9e592ac78b8732f65a9e15265f44d334f32062c163ed26a8943f4c09f0",
+    "myself/outputs/2026-10-21_wmh_right_effective_emg_full_01/episode_000020/E_selection.npz": "bfd3cd4a8c79d8feb3bb72b4fac064613396dbfb2b63ee6528132ccebca326e5",
+    "myself/outputs/2026-10-21_wmh_right_effective_emg_full_01/episode_000020/trained_seed44.npz": "db5c153f6c6333938e2fbd63671c395015aa8b9b9e826d108548ef1634593886",
+    "myself/outputs/2026-10-21_wmh_right_effective_emg_full_01/episode_000020/E_donors.npz": "adb2e9e374e1d8b3f1b4a659c6b8690348209245b3fb6484607510ce4571d9cd"
+  },
+  "completed_prediction_archives": 10,
+  "pytest": "see test_results_final.txt for final 15-test execution; test_results.txt preserves initial 14-test execution",
+  "limitations": [
+    "not independent subjects",
+    "overlapping windows may span block boundaries",
+    "original training stats bytes absent"
+  ]
+}

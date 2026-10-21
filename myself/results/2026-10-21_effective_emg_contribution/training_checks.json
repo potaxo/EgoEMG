@@ -1,0 +1,86 @@
+{
+  "frozen_digest_before": "6c0a9298f058a4c266b300f6e6da1a29b7e2c04e042e4945bdf06c3ed9a6422e",
+  "frozen_digest_after": "6c0a9298f058a4c266b300f6e6da1a29b7e2c04e042e4945bdf06c3ed9a6422e",
+  "checks": [
+    {
+      "seed": 42,
+      "initial_released_equivalence_max": 0.0
+    },
+    {
+      "seed": 42,
+      "condition": "B0",
+      "reload_prediction_max_rad": 0.0
+    },
+    {
+      "seed": 42,
+      "condition": "B1",
+      "reload_prediction_max_rad": 0.0
+    },
+    {
+      "seed": 42,
+      "condition": "B2",
+      "reload_prediction_max_rad": 0.0
+    },
+    {
+      "seed": 43,
+      "initial_released_equivalence_max": 0.0
+    },
+    {
+      "seed": 43,
+      "condition": "B0",
+      "reload_prediction_max_rad": 0.0
+    },
+    {
+      "seed": 43,
+      "condition": "B1",
+      "reload_prediction_max_rad": 0.0
+    },
+    {
+      "seed": 43,
+      "condition": "B2",
+      "reload_prediction_max_rad": 0.0
+    },
+    {
+      "seed": 44,
+      "initial_released_equivalence_max": 0.0
+    },
+    {
+      "seed": 44,
+      "condition": "B0",
+      "reload_prediction_max_rad": 0.0
+    },
+    {
+      "seed": 44,
+      "condition": "B1",
+      "reload_prediction_max_rad": 0.0
+    },
+    {
+      "seed": 44,
+      "condition": "B2",
+      "reload_prediction_max_rad": 0.0
+    }
+  ],
+  "resources": [
+    {
+      "seed": 42,
+      "training_seconds": 176.97133289499925,
+      "peak_allocated_bytes": 507268608,
+      "peak_reserved_bytes": 792723456,
+      "parameters_per_branch": 684695
+    },
+    {
+      "seed": 43,
+      "training_seconds": 175.4301985840002,
+      "peak_allocated_bytes": 517194240,
+      "peak_reserved_bytes": 805306368,
+      "parameters_per_branch": 684695
+    },
+    {
+      "seed": 44,
+      "training_seconds": 177.53939259900017,
+      "peak_allocated_bytes": 516931584,
+      "peak_reserved_bytes": 805306368,
+      "parameters_per_branch": 684695
+    }
+  ]
+}

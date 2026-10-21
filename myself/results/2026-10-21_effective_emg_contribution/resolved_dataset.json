@@ -1,0 +1,29 @@
+{
+  "memmap_dir": "/mnt/d/egoemg/data/dataset_egoemg_preview/data/memmap_data",
+  "crops_dir": "/mnt/d/egoemg/data/dataset_egoemg_preview/data/pre-crop_webcam_videoframes",
+  "episodes": [
+    "episode_000020",
+    "episode_000008"
+  ],
+  "window_length": 7790,
+  "stride": 200,
+  "historical_window_length": 12000,
+  "target_hand": "right",
+  "emg_field": "filtered_paper",
+  "layout": "emg2pose_interpolate16",
+  "channel_indices": [
+    10,
+    12,
+    0,
+    1,
+    2,
+    4,
+    5,
+    6
+  ],
+  "channel_interpolate": false,
+  "norm_mode": "per-dataset",
+  "norm_stats": "/home/potaxo/research/egoemg/EgoEMG/assets/per_dataset_norm_stats.json",
+  "center_target_only": true,
+  "augmentation": null
+}

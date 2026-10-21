@@ -1,0 +1,69 @@
+{
+  "script_sha256": "09e40f3da1f222739d3c0211458081828b8c7474eb6ed7dcae2a1ab93db0f73b",
+  "command": [
+    "myself/scripts/analysis/verify_effective_emg.py",
+    "--run-dir",
+    "myself/outputs/2026-10-21_wmh_right_effective_emg_full_01",
+    "--snapshot",
+    "myself/results/2026-10-21_effective_emg_contribution"
+  ],
+  "executed_source_copies_verified": 41,
+  "unchanged_assets_verified": 5,
+  "execution_files_hash_verified": 106,
+  "donor_counts": {
+    "episode_000008/T_all/101": 0,
+    "episode_000008/T_all/102": 0,
+    "episode_000008/T_all/103": 0,
+    "episode_000008/E/101": 6966,
+    "episode_000008/E/102": 6966,
+    "episode_000008/E/103": 6966,
+    "episode_000020/T_all/101": 4174,
+    "episode_000020/T_all/102": 4174,
+    "episode_000020/T_all/103": 4174,
+    "episode_000020/E/101": 3507,
+    "episode_000020/E/102": 3507,
+    "episode_000020/E/103": 3507
+  },
+  "training_maps_verified": 30,
+  "matched_epoch_orders_verified": 30,
+  "independent_float64_G": [
+    {
+      "episode": "episode_000008",
+      "seed": 42,
+      "G_deg": -0.01994324139362913
+    },
+    {
+      "episode": "episode_000008",
+      "seed": 43,
+      "G_deg": -0.015082606683847644
+    },
+    {
+      "episode": "episode_000008",
+      "seed": 44,
+      "G_deg": -0.01908981150421507
+    },
+    {
+      "episode": "episode_000020",
+      "seed": 42,
+      "G_deg": 0.005936072324812969
+    },
+    {
+      "episode": "episode_000020",
+      "seed": 43,
+      "G_deg": 0.003937855399042789
+    },
+    {
+      "episode": "episode_000020",
+      "seed": 44,
+      "G_deg": 0.008950416920846749
+    }
+  ],
+  "grouped_weighted_reconciliation": true,
+  "complete_support_pool_isolation": true,
+  "snapshot": {
+    "snapshot_hash_files": 28,
+    "local_links_checked": 17,
+    "all_snapshot_files_trackable": true,
+    "full_run_ignored": true
+  }
+}
