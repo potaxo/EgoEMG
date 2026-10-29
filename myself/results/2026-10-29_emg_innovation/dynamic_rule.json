@@ -1,0 +1,9 @@
+{
+  "amplitude_tertiles_rad": [
+    0.009279058004419008,
+    0.031138141329089795
+  ],
+  "source": "T_fit only",
+  "transition": "gesture/active metadata changes within +/-200 rows",
+  "nominal_rate_hz": 2000
+}

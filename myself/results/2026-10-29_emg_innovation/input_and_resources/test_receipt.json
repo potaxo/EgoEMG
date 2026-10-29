@@ -1,0 +1,9 @@
+{
+  "passed": 21,
+  "output_path": "myself/outputs/2026-10-29_emg_innovation_full_02/test_output_final.txt",
+  "output_sha256": "33be135fb6c7087610fc0fac6b2c8042e96c71b031c01ee8dd5b7bdbb11db7a4",
+  "test_source_sha256": "9323612862c4cb498a27d1457011153218bbee1651ae63b3fc26759bb8e2dd1a",
+  "basetemp": "myself/.cache/innovation_handoff_final_tests",
+  "cache_dir": "myself/.pytest_cache",
+  "recorded_at": "2026-10-29T13:06:00.886662+09:00"
+}

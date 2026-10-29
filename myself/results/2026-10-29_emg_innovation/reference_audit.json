@@ -1,0 +1,18 @@
+{
+  "raw_value": 0,
+  "mean": 0.028774764388799667,
+  "std": 94.73531341552734,
+  "padding": -0.00030373852207412336,
+  "normalized_shape": [
+    16,
+    7790
+  ],
+  "encoded_shape": [
+    1,
+    146,
+    256
+  ],
+  "raw_layout_reconstruction_exact": true,
+  "reference_sha256": "29171a04c44a19cfc3626dfa52f25f15a64b3e8bfb3654e4415a179ed2be0d74",
+  "no_encoded_reference_after_adapter_cache": true
+}

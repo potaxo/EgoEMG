@@ -1,0 +1,11 @@
+pool,offset_rows,valid_angles,masked_angles,checked_against_designated_memmap
+T_fit_selection.npz,-200,61400,20,True
+T_fit_selection.npz,200,61400,20,True
+T_val_selection.npz,-200,10360,0,True
+T_val_selection.npz,200,10360,0,True
+episode_000020/enriched_E.npz,-200,70140,0,True
+episode_000020/enriched_E.npz,200,70140,0,True
+episode_000008/enriched_E.npz,-200,139260,60,True
+episode_000008/enriched_E.npz,200,139260,60,True
+episode_000028/enriched_E.npz,-200,4280,40,True
+episode_000028/enriched_E.npz,200,4280,40,True

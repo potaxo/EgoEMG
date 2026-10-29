@@ -4,11 +4,12 @@
 
 | 实验日期 | 研究与范围 | 报告与来源 |
 | --- | --- | --- |
+| 2026-10-29 | Preview右手；独立视觉锚点下七家族×三EMG条件×三seed，T_fit/T_val完整支持隔离；锁定后wmh/zbk/wsj复核与R0/R2的T_all重训，81逻辑单元全部完成。 | [英文报告](2026-10-29_emg_innovation/report.md) · [快照说明](2026-10-29_emg_innovation/README.md) |
 | 2026-10-21 | Preview右手；发布模型配对干预、wmh三seed B0/B1/B2匹配训练、zbk冻结复核。全部本轮新执行，仅复用历史中心选择。 | [报告](2026-10-21_effective_emg_contribution/report.md) · [快照说明](2026-10-21_effective_emg_contribution/README.md) |
 | 2026-10-14 | 两位参与者的同动作后次执行校准；一位参与者的共同样本模态比较与三 seed 视觉引导聚合。作为本轮诊断背景。 | [报告](2026-10-14_research_diagnostic/report.md) · [快照说明](2026-10-14_research_diagnostic/README.md) |
 | 2026-10-05 | wmh 单参与者、预览录制内跨动作校准，比较参考标签与 RGB teacher。作为早期证据保留。 | [报告](2026-10-05_single_subject_calibration/report.md) · [快照说明](2026-10-05_single_subject_calibration/README.md) |
 
-10月14日与10月21日的wmh共同集中心一致，本轮重新计算全部预测；早期校准协议与评估样本不同，不直接比较MAE高低。所有结论均受预览数据、checkpoint 参与者暴露未完全追溯、非因果预处理和重叠窗口等限制。
+10月14日与10月21日的wmh共同集中心一致，10月21日重新计算了全部预测；早期校准协议与评估样本不同，不直接比较MAE高低。10月29日使用独立视觉锚点、30epochs和用户授权的batch128，新增分组验证与结构比较；与历史发布融合分数分开解释。所有结论均受预览数据、checkpoint 参与者暴露未完全追溯、非因果预处理和重叠窗口等限制。
 
 ## 快照约定
 

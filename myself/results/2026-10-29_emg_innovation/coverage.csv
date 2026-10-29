@@ -1,0 +1,7 @@
+episode,participant,pool,centers,valid_pose_angles,valid_delta_minus_angles,valid_delta_plus_angles,transition_centers,original_candidates,exclusions_json,used_for_fitting
+episode_000020,wmh,T_all,4174,83480,83460,83460,82,7828,"{""eligible"": 7681, ""missing_crop"": 147}",True
+episode_000020,wmh,E,3507,70140,70140,70140,50,7828,"{""eligible"": 7681, ""missing_crop"": 147}",False
+episode_000008,zbk,T_all,0,0,0,0,0,6966,"{""eligible"": 6966}",False
+episode_000008,zbk,E,6966,139320,139260,139260,126,6966,"{""eligible"": 6966}",False
+episode_000028,wsj,T_all,1447,28940,28780,28740,21,1729,"{""eligible"": 1663, ""missing_crop"": 66}",False
+episode_000028,wsj,E,216,4320,4280,4280,0,1729,"{""eligible"": 1663, ""missing_crop"": 66}",False

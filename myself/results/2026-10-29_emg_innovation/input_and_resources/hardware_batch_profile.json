@@ -1,0 +1,210 @@
+{
+  "encoding": {
+    "measurements": [
+      {
+        "batch": 16,
+        "seconds_median": 0.05045065499871271,
+        "samples_per_second": 317.1415713117749,
+        "peak_allocated_bytes": 299458560,
+        "peak_reserved_bytes": 438304768,
+        "max_abs_feature_errors": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_l2_feature_errors": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "numerical_comparison_pass": true
+      },
+      {
+        "batch": 64,
+        "seconds_median": 0.20546222600023611,
+        "samples_per_second": 311.4927801859134,
+        "peak_allocated_bytes": 1071647232,
+        "peak_reserved_bytes": 1979711488,
+        "max_abs_feature_errors": [
+          0.0,
+          9.5367431640625e-06,
+          1.9669532775878906e-06,
+          7.152557373046875e-07
+        ],
+        "relative_l2_feature_errors": [
+          0.0,
+          9.073290243577503e-07,
+          5.267729079605488e-07,
+          4.083906333107734e-07
+        ],
+        "numerical_comparison_pass": true
+      },
+      {
+        "batch": 128,
+        "seconds_median": 0.39285091099918645,
+        "samples_per_second": 325.82335032504244,
+        "peak_allocated_bytes": 1423501824,
+        "peak_reserved_bytes": 3219128320,
+        "max_abs_feature_errors": [
+          4.8160552978515625e-05,
+          1.0728836059570312e-05,
+          2.1457672119140625e-06,
+          8.940696716308594e-07
+        ],
+        "relative_l2_feature_errors": [
+          1.0939007552224211e-05,
+          1.0974350743708783e-06,
+          6.16802140029904e-07,
+          4.3034916075157525e-07
+        ],
+        "numerical_comparison_pass": true
+      },
+      {
+        "batch": 256,
+        "seconds_median": 0.8221245639997505,
+        "samples_per_second": 311.3883360381842,
+        "peak_allocated_bytes": 2657298432,
+        "peak_reserved_bytes": 5685379072,
+        "max_abs_feature_errors": [
+          4.8160552978515625e-05,
+          1.2874603271484375e-05,
+          3.2186508178710938e-06,
+          9.238719940185547e-07
+        ],
+        "relative_l2_feature_errors": [
+          1.0939007552224211e-05,
+          1.1633775329755736e-06,
+          6.716543339280179e-07,
+          5.159334364179813e-07
+        ],
+        "numerical_comparison_pass": true
+      }
+    ],
+    "includes_real_reads_and_backbones": true,
+    "FP32": true,
+    "TF32": false,
+    "no_features_written": true,
+    "reference_batch": 16
+  },
+  "heads": {
+    "measurements": [
+      {
+        "family": "R1",
+        "batch": 32,
+        "training_step_seconds_median": 0.009633918500185246,
+        "samples_per_second": 3321.597540957471,
+        "estimated_epoch_seconds": 0.9248561760177836,
+        "steps_per_epoch": 96,
+        "peak_allocated_bytes": 210340352,
+        "peak_reserved_bytes": 226492416
+      },
+      {
+        "family": "R1",
+        "batch": 64,
+        "training_step_seconds_median": 0.008712580000064918,
+        "samples_per_second": 7345.700125510828,
+        "estimated_epoch_seconds": 0.41820384000311606,
+        "steps_per_epoch": 48,
+        "peak_allocated_bytes": 239288320,
+        "peak_reserved_bytes": 272629760
+      },
+      {
+        "family": "R1",
+        "batch": 128,
+        "training_step_seconds_median": 0.010995526000442624,
+        "samples_per_second": 11641.098388094155,
+        "estimated_epoch_seconds": 0.26389262401062297,
+        "steps_per_epoch": 24,
+        "peak_allocated_bytes": 288402432,
+        "peak_reserved_bytes": 335544320
+      },
+      {
+        "family": "R1",
+        "batch": 256,
+        "training_step_seconds_median": 0.019765085499784618,
+        "samples_per_second": 12952.132182923755,
+        "estimated_epoch_seconds": 0.23718102599741542,
+        "steps_per_epoch": 12,
+        "peak_allocated_bytes": 396727808,
+        "peak_reserved_bytes": 478150656
+      },
+      {
+        "family": "R1",
+        "batch": 512,
+        "training_step_seconds_median": 0.036539322501084825,
+        "samples_per_second": 14012.301404460883,
+        "estimated_epoch_seconds": 0.21923593500650895,
+        "steps_per_epoch": 6,
+        "peak_allocated_bytes": 617138688,
+        "peak_reserved_bytes": 713031680
+      },
+      {
+        "family": "R4",
+        "batch": 32,
+        "training_step_seconds_median": 0.014117606500803959,
+        "samples_per_second": 2266.6731785007387,
+        "estimated_epoch_seconds": 1.35529022407718,
+        "steps_per_epoch": 96,
+        "peak_allocated_bytes": 241807872,
+        "peak_reserved_bytes": 270532608
+      },
+      {
+        "family": "R4",
+        "batch": 64,
+        "training_step_seconds_median": 0.015569876500194368,
+        "samples_per_second": 4110.501454472105,
+        "estimated_epoch_seconds": 0.7473540720093297,
+        "steps_per_epoch": 48,
+        "peak_allocated_bytes": 301932032,
+        "peak_reserved_bytes": 337641472
+      },
+      {
+        "family": "R4",
+        "batch": 128,
+        "training_step_seconds_median": 0.01826939200054767,
+        "samples_per_second": 7006.25395722873,
+        "estimated_epoch_seconds": 0.43846540801314404,
+        "steps_per_epoch": 24,
+        "peak_allocated_bytes": 423024640,
+        "peak_reserved_bytes": 467664896
+      },
+      {
+        "family": "R4",
+        "batch": 256,
+        "training_step_seconds_median": 0.035086177000266616,
+        "samples_per_second": 7296.320713369675,
+        "estimated_epoch_seconds": 0.4210341240031994,
+        "steps_per_epoch": 12,
+        "peak_allocated_bytes": 665270784,
+        "peak_reserved_bytes": 744488960
+      },
+      {
+        "family": "R4",
+        "batch": 512,
+        "training_step_seconds_median": 0.06817772600061289,
+        "samples_per_second": 7509.784060492092,
+        "estimated_epoch_seconds": 0.40906635600367736,
+        "steps_per_epoch": 6,
+        "peak_allocated_bytes": 1158553088,
+        "peak_reserved_bytes": 1262485504
+      }
+    ],
+    "device": "NVIDIA GeForce RTX 4060 Laptop GPU",
+    "includes_batch_H2D": true,
+    "FP32": true,
+    "TF32": false,
+    "selection": "hardware throughput only; no E error computed"
+  },
+  "source_files": {
+    "myself/outputs/2026-10-29_emg_innovation_encoding_profile_02/profile.json": "60e1c5bdf14ca9c4678e79dac5669ecb3ae9be5aea453e97eab3722f9272a77d",
+    "myself/outputs/2026-10-29_emg_innovation_encoding_profile_02/head_profile.json": "ef1113e8551c738e21fd7830492b715984ef33549401926c4f8e58d048d61428",
+    "myself/outputs/2026-10-29_emg_innovation_encoding_profile_02/executed_profile.py": "5b350cb8de64601a265f41b8a23695969572c0672b1a33c4b8fb00dfd4f30608"
+  },
+  "chosen_encoding_batch": 128,
+  "chosen_effective_batch": 128,
+  "authorization": "User explicitly authorized more aggressive GPU memory and effective batch adjustment before E scoring",
+  "superseded_run": "myself/outputs/2026-10-29_emg_innovation_full_01",
+  "selection_basis": "hardware throughput and update-count tradeoff only; no E error"
+}

@@ -1,0 +1,79 @@
+{
+  "fingers": [
+    {
+      "finger": "thumb",
+      "indices": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "joints": [
+        "thumb_cmc_fe",
+        "thumb_cmc_aa",
+        "thumb_mcp_fe",
+        "thumb_ip_fe"
+      ]
+    },
+    {
+      "finger": "index",
+      "indices": [
+        4,
+        5,
+        6,
+        7
+      ],
+      "joints": [
+        "index_mcp_aa",
+        "index_mcp_fe",
+        "index_pip_fe",
+        "index_dip_fe"
+      ]
+    },
+    {
+      "finger": "middle",
+      "indices": [
+        8,
+        9,
+        10,
+        11
+      ],
+      "joints": [
+        "middle_mcp_aa",
+        "middle_mcp_fe",
+        "middle_pip_fe",
+        "middle_dip_fe"
+      ]
+    },
+    {
+      "finger": "ring",
+      "indices": [
+        12,
+        13,
+        14,
+        15
+      ],
+      "joints": [
+        "ring_mcp_aa",
+        "ring_mcp_fe",
+        "ring_pip_fe",
+        "ring_dip_fe"
+      ]
+    },
+    {
+      "finger": "pinky",
+      "indices": [
+        16,
+        17,
+        18,
+        19
+      ],
+      "joints": [
+        "pinky_mcp_aa",
+        "pinky_mcp_fe",
+        "pinky_pip_fe",
+        "pinky_dip_fe"
+      ]
+    }
+  ]
+}

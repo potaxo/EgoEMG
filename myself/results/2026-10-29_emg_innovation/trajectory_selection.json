@@ -1,0 +1,53 @@
+{
+  "rule": "largest and smallest execution-level mean-seed G_method; tie by execution ID; joint 5 fixed; no trajectory smoothing",
+  "selected": [
+    {
+      "episode": "episode_000020",
+      "execution": 107,
+      "selection": "largest",
+      "method_gain_deg": 0.24165877112522016,
+      "joint": 5,
+      "plot_prediction": "seed mean for illustration only; primary MAE is mean of per-seed MAEs"
+    },
+    {
+      "episode": "episode_000020",
+      "execution": 103,
+      "selection": "smallest",
+      "method_gain_deg": -0.3039363051178732,
+      "joint": 5,
+      "plot_prediction": "seed mean for illustration only; primary MAE is mean of per-seed MAEs"
+    },
+    {
+      "episode": "episode_000008",
+      "execution": 144,
+      "selection": "largest",
+      "method_gain_deg": 0.5197690817768629,
+      "joint": 5,
+      "plot_prediction": "seed mean for illustration only; primary MAE is mean of per-seed MAEs"
+    },
+    {
+      "episode": "episode_000008",
+      "execution": 43,
+      "selection": "smallest",
+      "method_gain_deg": -0.33750806347141404,
+      "joint": 5,
+      "plot_prediction": "seed mean for illustration only; primary MAE is mean of per-seed MAEs"
+    },
+    {
+      "episode": "episode_000028",
+      "execution": 21,
+      "selection": "largest",
+      "method_gain_deg": 0.33661717519468404,
+      "joint": 5,
+      "plot_prediction": "seed mean for illustration only; primary MAE is mean of per-seed MAEs"
+    },
+    {
+      "episode": "episode_000028",
+      "execution": 15,
+      "selection": "smallest",
+      "method_gain_deg": -0.07744261116043034,
+      "joint": 5,
+      "plot_prediction": "seed mean for illustration only; primary MAE is mean of per-seed MAEs"
+    }
+  ]
+}

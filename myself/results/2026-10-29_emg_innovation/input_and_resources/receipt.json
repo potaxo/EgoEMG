@@ -1,0 +1,15 @@
+{
+  "script_sha256": "223022d12e6260278650ec498265bcf299d3d9aec48be082fd9c954be14a129b",
+  "command": [
+    "myself/scripts/analysis/audit_emg_innovation.py",
+    "--run-dir",
+    "myself/outputs/2026-10-29_emg_innovation_full_02",
+    "--time-pipeline",
+    "--hash-payloads"
+  ],
+  "frozen_unchanged": true,
+  "endpoint_checks": 10,
+  "selected_input_windows": 18,
+  "bulk_input_or_feature_files_written": false,
+  "created_at": "2026-10-29T13:11:28.703388+09:00"
+}

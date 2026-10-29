@@ -1,0 +1,28 @@
+{
+  "seed": 20261028,
+  "rule": "whole recording-level continuous gesture/active executions assigned 80/20; purge input support crossing assignments",
+  "validation_execution_ids": [
+    153,
+    183,
+    157,
+    52,
+    47,
+    175,
+    131,
+    171,
+    151,
+    187,
+    135
+  ],
+  "counts": {
+    "T_fit": 3071,
+    "T_val": 518,
+    "purged_partition_support": 585
+  },
+  "grouping_independent_of_original_split": true,
+  "input_rows": 7790,
+  "delta_offsets": [
+    -200,
+    200
+  ]
+}

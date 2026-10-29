@@ -1,0 +1,10 @@
+{
+  "frozen_used_parameters": 14790246,
+  "loaded_release_fusion_parameters": 15474941,
+  "loaded_independent_vision_parameters": 11450454,
+  "unused_new_modules": "Common shape/state is stored for initialization checks. Disabled auxiliary and R0 pooling modules excluded from trainable/inference counts.",
+  "inference_definition": "frozen used backbone+anchor parameters plus active fusion parameters, auxiliary heads excluded",
+  "training_definition": "same frozen used parameters plus active trainable fusion and auxiliary parameters",
+  "joint_mapping_verified_against": "egoemg.constants.JOINTS and input manifest",
+  "dropout": "0 in every newly trained module; all frozen modules eval"
+}

@@ -1,0 +1,157 @@
+{
+  "selected_family": "R2",
+  "identity": "c49b1625007ade78fc323ec0bcca509e1357c01d417aaf0966626a94778c69e0",
+  "generated_at": "2026-10-29T12:57:50.283457+09:00",
+  "scores": [
+    {
+      "family": "R0",
+      "mean_validation_mae_deg": 1.6787855006512853,
+      "seed_validation_mae_deg": [
+        1.6771742309146276,
+        1.677208501869602,
+        1.6819737691696262
+      ],
+      "measured_batch_seconds": 0.0022646870750122616,
+      "trainable_parameters": 375045
+    },
+    {
+      "family": "R1",
+      "mean_validation_mae_deg": 1.6773430886572946,
+      "seed_validation_mae_deg": [
+        1.673673753238748,
+        1.6748867925606812,
+        1.6834687201724554
+      ],
+      "measured_batch_seconds": 0.0019069276749632991,
+      "trainable_parameters": 366724
+    },
+    {
+      "family": "R2",
+      "mean_validation_mae_deg": 1.663904234561597,
+      "seed_validation_mae_deg": [
+        1.6600385799407222,
+        1.6644986762397778,
+        1.6671754475042908
+      ],
+      "measured_batch_seconds": 0.003129734899994219,
+      "trainable_parameters": 366724
+    },
+    {
+      "family": "R3",
+      "mean_validation_mae_deg": 1.670345368047456,
+      "seed_validation_mae_deg": [
+        1.6612844884464384,
+        1.6764491541045916,
+        1.6733024615913377
+      ],
+      "measured_batch_seconds": 0.0030113815249933396,
+      "trainable_parameters": 457152
+    },
+    {
+      "family": "R4",
+      "mean_validation_mae_deg": 1.6711586748427931,
+      "seed_validation_mae_deg": [
+        1.6616891691738118,
+        1.6800763755972383,
+        1.671710479757329
+      ],
+      "measured_batch_seconds": 0.0030605317750087126,
+      "trainable_parameters": 457152
+    },
+    {
+      "family": "R5",
+      "mean_validation_mae_deg": 1.676425432256406,
+      "seed_validation_mae_deg": [
+        1.6779329289230487,
+        1.6751657987692121,
+        1.6761775690769571
+      ],
+      "measured_batch_seconds": 0.0019649090500024613,
+      "trainable_parameters": 457152
+    },
+    {
+      "family": "R6",
+      "mean_validation_mae_deg": 1.6783527517844687,
+      "seed_validation_mae_deg": [
+        1.673081152588539,
+        1.6754673097107797,
+        1.686509793054087
+      ],
+      "measured_batch_seconds": 0.0019463416250346199,
+      "trainable_parameters": 457152
+    }
+  ],
+  "rule": "three seeds equal weight after per-seed valid-angle-weighted T_val MAE; within .001 deg of minimum choose measured inference seconds, parameters, then ID",
+  "final_retraining": {
+    "families": [
+      "R0",
+      "R2"
+    ],
+    "conditions": [
+      "B0",
+      "B1",
+      "B2"
+    ],
+    "seeds": [
+      42,
+      43,
+      44
+    ],
+    "epochs": 30,
+    "initialization": "original seed initialization, not T_fit checkpoint",
+    "primary": "last epoch",
+    "T_val_merged_into_T_all": true
+  },
+  "inputs": {
+    "families": [
+      "R0",
+      "R1",
+      "R2",
+      "R3",
+      "R4",
+      "R5",
+      "R6"
+    ],
+    "seeds": [
+      42,
+      43,
+      44
+    ],
+    "epochs": 30,
+    "batch": 128,
+    "encoding_batch": 128,
+    "Adam": {
+      "lr": 0.0001,
+      "weight_decay": 0.0001
+    },
+    "precision": "deterministic FP32, TF32 disabled",
+    "width": 128,
+    "heads": 4,
+    "queries": 5,
+    "vision_tokens": 16,
+    "dropout": 0,
+    "primary": "last epoch",
+    "lambda_pose": 1,
+    "lambda_delta": 1,
+    "split_seed": 20261028,
+    "mapping_seeds": [
+      101,
+      102,
+      103
+    ],
+    "smoke": false,
+    "feature_storage": "bounded CPU RAM only; otherwise stream and recompute",
+    "memmap": "/mnt/d/egoemg/data/dataset_egoemg_preview/data/memmap_data",
+    "crops": "/mnt/d/egoemg/data/dataset_egoemg_preview/data/pre-crop_webcam_videoframes",
+    "selection_before_E": true
+  },
+  "supporting_files": {
+    "T_fit_selection.npz": "21033deccbeebad01e2baafb062f8e2f8a182871c44271775e9477e9b7d84c89",
+    "T_val_selection.npz": "5e6e79b96ba0d2d6d5e74e0fd9eb7b0237e33b75cc3d48f81d8db157b517f34e",
+    "T_fit_donors.npz": "a7273d9356d8ec805971c35c6ebbf8b71938c9012174134443830cc230536710",
+    "T_val_donors.npz": "eab3b513aa3054df52e85538a341e962330c5ed294748e700f5fb03bed9b1ce3",
+    "dynamic_rule.json": "c4b6b3c5e3b41c6a4b23a9dde5243193bc489e54b11dfd221dae61f56e36129c",
+    "partition_rule.json": "18ede4087d516e66af3d3132730d7799769223eeb1dadc4f1d0f60a38eff735e"
+  },
+  "content_sha256": "e51fea2b4b17f8e08c903453a14c58f5df6fe53ca4569a8c9022306ef434aa92"
+}

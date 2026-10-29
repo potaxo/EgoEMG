@@ -1,0 +1,244 @@
+{
+  "exported_at": "2026-10-29T13:15:53.124214+09:00",
+  "export_checkout_commit": "d7f55cfd30a93807641d93190f93e2ce240f71fa",
+  "execution_source": "myself/outputs/2026-10-29_emg_innovation_full_02",
+  "execution_identity": "c49b1625007ade78fc323ec0bcca509e1357c01d417aaf0966626a94778c69e0",
+  "execution_checkout_commit": "d7f55cfd30a93807641d93190f93e2ce240f71fa",
+  "files": [
+    {
+      "file": "report.md",
+      "source": "myself/outputs/2026-10-29_emg_innovation_full_02/analysis/report.md",
+      "sha256": "5986c0f494e1fd61f731d33800ec378df2820d07ddf952887c41f6d8e3c1f28c"
+    },
+    {
+      "file": "main_tables.json",
+      "source": "myself/outputs/2026-10-29_emg_innovation_full_02/analysis/main_tables.json",
+      "sha256": "b08306943ebf47affffb63a3480d7d9d5ad1d159d6923c2195d432980ec8d790"
+    },
+    {
+      "file": "main_fit.csv",
+      "source": "myself/outputs/2026-10-29_emg_innovation_full_02/analysis/main_fit.csv",
+      "sha256": "8ee17d6652a6a9b80ca527652b1d560de031a584efc1a0744cd47fab7f447cc1"
+    },
+    {
+      "file": "main_T_all.csv",
+      "source": "myself/outputs/2026-10-29_emg_innovation_full_02/analysis/main_T_all.csv",
+      "sha256": "2d0f3ba951abaeced8d816fb36b9eea3f58b01042ac951f287be71ce748d4a9e"
+    },
+    {
+      "file": "validation_metrics.csv",
+      "source": "myself/outputs/2026-10-29_emg_innovation_full_02/analysis/validation_metrics.csv",
+      "sha256": "d420551544ebb7329ee053c9f44588f096e1efff0f1eb9895e9eff7231a29817"
+    },
+    {
+      "file": "validation_effects.csv",
+      "source": "myself/outputs/2026-10-29_emg_innovation_full_02/analysis/validation_effects.csv",
+      "sha256": "eaca2ee3cef2eddcc192f099c43349b50559b6f23f34ef50a908fa5c38efa6b7"
+    },
+    {
+      "file": "supervision_contrasts.csv",
+      "source": "myself/outputs/2026-10-29_emg_innovation_full_02/analysis/supervision_contrasts.csv",
+      "sha256": "de7e552671a5d35aeca0c4cb903c1369dd07984d172709e46533f4fe35301f22"
+    },
+    {
+      "file": "main_by_seed.csv",
+      "source": "myself/outputs/2026-10-29_emg_innovation_full_02/analysis/main_by_seed.csv",
+      "sha256": "5e3edefd535078e87c6baabf421d3bebb2d79b2b305c6b066fd262bf82ccd4c5"
+    },
+    {
+      "file": "main_summary.csv",
+      "source": "myself/outputs/2026-10-29_emg_innovation_full_02/analysis/main_summary.csv",
+      "sha256": "791904c6112d3aacb099d67bf49eab920aa21dd32dbc964317790be972a1f1fb"
+    },
+    {
+      "file": "effects_by_seed.csv",
+      "source": "myself/outputs/2026-10-29_emg_innovation_full_02/analysis/effects_by_seed.csv",
+      "sha256": "b739285d27841400e38f0028b7147a9f984ca8b435869c4596765424c4ee7431"
+    },
+    {
+      "file": "effect_summary.csv",
+      "source": "myself/outputs/2026-10-29_emg_innovation_full_02/analysis/effect_summary.csv",
+      "sha256": "7252e4eacf2b4d4966704aa352329fbd7250cfb472306cd52ad04dc63237f2e0"
+    },
+    {
+      "file": "probe_metrics.csv",
+      "source": "myself/outputs/2026-10-29_emg_innovation_full_02/analysis/probe_metrics.csv",
+      "sha256": "6868f4671faf485b35c749e47476d046687e8a7160b2c0822a3e65f1e5ed4457"
+    },
+    {
+      "file": "coverage.csv",
+      "source": "myself/outputs/2026-10-29_emg_innovation_full_02/analysis/coverage.csv",
+      "sha256": "3ff3fe73d1c0e5b660375f006ddd41670299695252a0ec2b685f5b9a4e93bf6e"
+    },
+    {
+      "file": "groups.csv",
+      "source": "myself/outputs/2026-10-29_emg_innovation_full_02/analysis/groups.csv",
+      "sha256": "674811fd1b0a65b1010ca978728b74b96c7a4f518b3c26ed626579c66d049251"
+    },
+    {
+      "file": "group_gains.csv",
+      "source": "myself/outputs/2026-10-29_emg_innovation_full_02/analysis/group_gains.csv",
+      "sha256": "53a7bdad6df353144d693b05175abbab637fd6adeacaf294a1d78f96002000c8"
+    },
+    {
+      "file": "execution_intervals.csv",
+      "source": "myself/outputs/2026-10-29_emg_innovation_full_02/analysis/execution_intervals.csv",
+      "sha256": "c17e34a33b27b344ff9ef4594e0717dd1db1b27cad260b0a9733a2f8a87736a4"
+    },
+    {
+      "file": "interventions.csv",
+      "source": "myself/outputs/2026-10-29_emg_innovation_full_02/analysis/interventions.csv",
+      "sha256": "79f6833094be2fa132d5d4269f61fa4e7c5cf5c94743093dbca0638bb633d520"
+    },
+    {
+      "file": "auxiliary_metrics.csv",
+      "source": "myself/outputs/2026-10-29_emg_innovation_full_02/analysis/auxiliary_metrics.csv",
+      "sha256": "8e0bd9cc74b99de2055e817bf3f2983fbb7ef4cd696a46a162bcbfce4068ba3b"
+    },
+    {
+      "file": "resources.csv",
+      "source": "myself/outputs/2026-10-29_emg_innovation_full_02/analysis/resources.csv",
+      "sha256": "62cc3510624592c98dcdde9b7d02c2df5b4458b1c48e5008aee2aa6b12764752"
+    },
+    {
+      "file": "matrix_status.csv",
+      "source": "myself/outputs/2026-10-29_emg_innovation_full_02/analysis/matrix_status.csv",
+      "sha256": "55b3d08d986fcd902e94c7aa82740f09e52472228dc170bbafb9a46316505a8e"
+    },
+    {
+      "file": "verification.json",
+      "source": "myself/outputs/2026-10-29_emg_innovation_full_02/analysis/verification.json",
+      "sha256": "4210c40130103910cda7761f9eddd3bf8c34067b01f6900c0e7180089de8593d"
+    },
+    {
+      "file": "trajectory_selection.json",
+      "source": "myself/outputs/2026-10-29_emg_innovation_full_02/analysis/trajectory_selection.json",
+      "sha256": "43a3002df6dba6ba69d5ac7f4e32ff902dc7dbcea417525a4a36c50b2b209ea0"
+    },
+    {
+      "file": "visual_error_bins.json",
+      "source": "myself/outputs/2026-10-29_emg_innovation_full_02/analysis/visual_error_bins.json",
+      "sha256": "ad8ba03914aaf36fbe72b7dde638b6127ae1e0c12d168b40e2c28cc605f5fc8e"
+    },
+    {
+      "file": "selection_lock.json",
+      "source": "myself/outputs/2026-10-29_emg_innovation_full_02/selection_lock.json",
+      "sha256": "82717d35e82bd31eeb0ecd6552fab6488226c76af103451f309499fd9dd0a971"
+    },
+    {
+      "file": "profile.json",
+      "source": "myself/outputs/2026-10-29_emg_innovation_full_02/profile.json",
+      "sha256": "8358d4dd692fb56e67934dfb05117d4edec5e8c4dcdc2391d762964b13ca83df"
+    },
+    {
+      "file": "partition_rule.json",
+      "source": "myself/outputs/2026-10-29_emg_innovation_full_02/partition_rule.json",
+      "sha256": "18ede4087d516e66af3d3132730d7799769223eeb1dadc4f1d0f60a38eff735e"
+    },
+    {
+      "file": "dynamic_rule.json",
+      "source": "myself/outputs/2026-10-29_emg_innovation_full_02/dynamic_rule.json",
+      "sha256": "c4b6b3c5e3b41c6a4b23a9dde5243193bc489e54b11dfd221dae61f56e36129c"
+    },
+    {
+      "file": "input_audit.json",
+      "source": "myself/outputs/2026-10-29_emg_innovation_full_02/input_audit.json",
+      "sha256": "4080657c99069640ddcc578648bdf6c980cb0a053df950dba0d2c9f5d815c5d7"
+    },
+    {
+      "file": "reference_audit.json",
+      "source": "myself/outputs/2026-10-29_emg_innovation_full_02/reference_audit.json",
+      "sha256": "a518fc95ae5c0d1394f840ff8e10f76445a9790cfa287858e36e2f2fd5be1d2a"
+    },
+    {
+      "file": "joint_mapping.json",
+      "source": "myself/outputs/2026-10-29_emg_innovation_full_02/joint_mapping.json",
+      "sha256": "c6e05ef4995d9e1288b370e0b57d7954e740f001908eedcf8f1a998b5499d77d"
+    },
+    {
+      "file": "figures/01_main_matrix.png",
+      "source": "myself/outputs/2026-10-29_emg_innovation_full_02/analysis/figures/01_main_matrix.png",
+      "sha256": "63e816a32825b3f8fad04a88a7a6046787f7842b499c9aa2a3bdaba2de8a9b2c"
+    },
+    {
+      "file": "figures/02_method_and_emg_gains.png",
+      "source": "myself/outputs/2026-10-29_emg_innovation_full_02/analysis/figures/02_method_and_emg_gains.png",
+      "sha256": "8177dedf986571193467435f97c13bb720ef33659c105fcd860c581dc717d97c"
+    },
+    {
+      "file": "figures/03_probes.png",
+      "source": "myself/outputs/2026-10-29_emg_innovation_full_02/analysis/figures/03_probes.png",
+      "sha256": "7ce172e6bc5fcc062a1ef9b1464ffa0e845ebe1729c48c798e2f215052888095"
+    },
+    {
+      "file": "figures/04_dynamic_groups.png",
+      "source": "myself/outputs/2026-10-29_emg_innovation_full_02/analysis/figures/04_dynamic_groups.png",
+      "sha256": "3aecade4d898210c5c6a4d8dc09ca4265b6434183096116f72e965fcd2677709"
+    },
+    {
+      "file": "figures/05_interventions.png",
+      "source": "myself/outputs/2026-10-29_emg_innovation_full_02/analysis/figures/05_interventions.png",
+      "sha256": "b0e5ca4d3ad7685fa11ddd8d7e546ade46a0ae8597f774858cf11bf8aaa18009"
+    },
+    {
+      "file": "figures/06_recording_review_and_retrain.png",
+      "source": "myself/outputs/2026-10-29_emg_innovation_full_02/analysis/figures/06_recording_review_and_retrain.png",
+      "sha256": "bdc86a65d8b45b1ff098fa72e4725758785c8a2e2e7961ba5c5590efbebf345f"
+    },
+    {
+      "file": "figures/07_fixed_rule_trajectories.png",
+      "source": "myself/outputs/2026-10-29_emg_innovation_full_02/analysis/figures/07_fixed_rule_trajectories.png",
+      "sha256": "7c1619acbb31d513ad1f87cd337261b5716190a24dc686b02dffdb669d54db62"
+    },
+    {
+      "file": "input_and_resources/input_channels.csv",
+      "source": "myself/outputs/2026-10-29_emg_innovation_full_02/supplement/input_channels.csv",
+      "sha256": "03b5d944d09e1a0d516a2ea86d52640849d02dd6e1fac70326db5ba04f4b87ab"
+    },
+    {
+      "file": "input_and_resources/feature_sensitivity.json",
+      "source": "myself/outputs/2026-10-29_emg_innovation_full_02/supplement/feature_sensitivity.json",
+      "sha256": "2e90fa541028b8128e01561580b64db4737a2f46d4036ba5d7683167abe41982"
+    },
+    {
+      "file": "input_and_resources/endpoint_verification.csv",
+      "source": "myself/outputs/2026-10-29_emg_innovation_full_02/supplement/endpoint_verification.csv",
+      "sha256": "0e4a217cc9c0c0367718d1cdd852ef7a9dae25cca753705b69a090fb685a7e7d"
+    },
+    {
+      "file": "input_and_resources/parameter_accounting.json",
+      "source": "myself/outputs/2026-10-29_emg_innovation_full_02/supplement/parameter_accounting.json",
+      "sha256": "f8c3a12c912584274d012c97be7086b03bd58cf8580508a8113a137ecc69ff5b"
+    },
+    {
+      "file": "input_and_resources/pipeline_timing.csv",
+      "source": "myself/outputs/2026-10-29_emg_innovation_full_02/supplement/pipeline_timing.csv",
+      "sha256": "24639c948897d063fece1d8a01993e95c385f2ca6ae1534340a286af7bad7caf"
+    },
+    {
+      "file": "input_and_resources/input_payload_hashes.json",
+      "source": "myself/outputs/2026-10-29_emg_innovation_full_02/supplement/input_payload_hashes.json",
+      "sha256": "2f620d717fec1fada724633c33f9c58b44eb983c5c4d7ac083d189407893ce60"
+    },
+    {
+      "file": "input_and_resources/receipt.json",
+      "source": "myself/outputs/2026-10-29_emg_innovation_full_02/supplement/receipt.json",
+      "sha256": "ab2c5572847d8e33d3695fe472eba3f9fc26b73768bd0d699da5312a38512f14"
+    },
+    {
+      "file": "input_and_resources/hardware_batch_profile.json",
+      "source": "myself/outputs/2026-10-29_emg_innovation_full_02/supplement/hardware_batch_profile.json",
+      "sha256": "ce636dbd37dc25e68aed40ffe1046a92e99fe0e4ca2fa87f6752345e1aa23598"
+    },
+    {
+      "file": "input_and_resources/test_receipt.json",
+      "source": "myself/outputs/2026-10-29_emg_innovation_full_02/supplement/test_receipt.json",
+      "sha256": "cba047e4f43ef4a27b68b86a1418bf1dc6e0a1bc87c0103cfaebbdf64eb5f929"
+    },
+    {
+      "file": "input_and_resources/environment.json",
+      "source": "myself/outputs/2026-10-29_emg_innovation_full_02/supplement/environment.json",
+      "sha256": "4cd4afebd4bffbfb550b64f1e7ca6ca04469889a17ba00697b691bec689d9322"
+    }
+  ]
+}

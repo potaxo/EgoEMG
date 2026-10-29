@@ -1,0 +1,101 @@
+{
+  "measurements": [
+    {
+      "family": "R0",
+      "cached_training_step_seconds": 0.011704651599939098,
+      "estimated_epoch_seconds": 0.2809116383985384,
+      "cached_head_batch_seconds": 0.0022190426750057666,
+      "stored": 465473,
+      "trainable": 375045,
+      "inference": 375045,
+      "peak_allocated_bytes": 267340800,
+      "peak_reserved_bytes": 3231711232
+    },
+    {
+      "family": "R1",
+      "cached_training_step_seconds": 0.006216683200000262,
+      "estimated_epoch_seconds": 0.1492003968000063,
+      "cached_head_batch_seconds": 0.0018991407999692455,
+      "stored": 465473,
+      "trainable": 366724,
+      "inference": 366724,
+      "peak_allocated_bytes": 288862720,
+      "peak_reserved_bytes": 3233808384
+    },
+    {
+      "family": "R2",
+      "cached_training_step_seconds": 0.01254391279999254,
+      "estimated_epoch_seconds": 0.30105390719982095,
+      "cached_head_batch_seconds": 0.003157549875004406,
+      "stored": 465473,
+      "trainable": 366724,
+      "inference": 366724,
+      "peak_allocated_bytes": 380181504,
+      "peak_reserved_bytes": 3235905536
+    }
+  ],
+  "head_batch": 128,
+  "encoding_batch": 128,
+  "GPU": "NVIDIA GeForce RTX 4060 Laptop GPU",
+  "synchronized": true,
+  "feature_extraction": [
+    {
+      "episode": "episode_000020",
+      "centers": 3071,
+      "budget_bytes": 4294967296,
+      "required_bytes": 566292400,
+      "available_bytes": 14796087296,
+      "feature_shapes": [
+        [
+          146,
+          256
+        ],
+        [
+          16,
+          512
+        ],
+        [
+          512
+        ],
+        [
+          20
+        ]
+      ],
+      "cached": true,
+      "reverse_before_encoder": false,
+      "pipeline_read_backbones_seconds": 10.190443536999737,
+      "encoding_batch": 128,
+      "read_included": true
+    },
+    {
+      "episode": "episode_000020",
+      "centers": 518,
+      "budget_bytes": 4294967296,
+      "required_bytes": 95519200,
+      "available_bytes": 13900906496,
+      "feature_shapes": [
+        [
+          146,
+          256
+        ],
+        [
+          16,
+          512
+        ],
+        [
+          512
+        ],
+        [
+          20
+        ]
+      ],
+      "cached": true,
+      "reverse_before_encoder": false,
+      "pipeline_read_backbones_seconds": 1.6612430500008486,
+      "encoding_batch": 128,
+      "read_included": true
+    }
+  ],
+  "estimated_54_cells_30_epochs_seconds": 394.8296088951174,
+  "note": "head-only cache timing; pipeline bank timings separately include reads/backbones; projections 16 spatial vision tokens, EMG full vs one pooled token"
+}

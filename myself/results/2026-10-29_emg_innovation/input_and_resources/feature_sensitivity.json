@@ -1,0 +1,154 @@
+{
+  "selection": "nearest eligible T_fit centers to 24 uniform nominal row-time targets; no errors used",
+  "ids": [
+    "episode_000020:R:146220",
+    "episode_000020:R:221420",
+    "episode_000020:R:290020",
+    "episode_000020:R:371885",
+    "episode_000020:R:447135",
+    "episode_000020:R:527930",
+    "episode_000020:R:589930",
+    "episode_000020:R:672800",
+    "episode_000020:R:710600",
+    "episode_000020:R:1344005",
+    "episode_000020:R:1349605",
+    "episode_000020:R:1424805",
+    "episode_000020:R:1509470",
+    "episode_000020:R:1575270",
+    "episode_000020:R:1650520",
+    "episode_000020:R:1716115",
+    "episode_000020:R:1809385",
+    "episode_000020:R:1876185"
+  ],
+  "stages": [
+    {
+      "condition": "correct",
+      "batch": 0,
+      "shape": [
+        8,
+        256,
+        146
+      ],
+      "mean": 0.000375147006707266,
+      "std": 0.07703863084316254,
+      "mean_abs": 0.01621130295097828,
+      "mean_abs_change": 0.0,
+      "relative_l2": 0.0
+    },
+    {
+      "condition": "constant",
+      "batch": 0,
+      "shape": [
+        8,
+        256,
+        146
+      ],
+      "mean": 0.00023979270190466195,
+      "std": 0.05664245784282684,
+      "mean_abs": 0.01802057772874832,
+      "mean_abs_change": 0.026150930672883987,
+      "relative_l2": 1.2133290767669678
+    },
+    {
+      "condition": "reverse",
+      "batch": 0,
+      "shape": [
+        8,
+        256,
+        146
+      ],
+      "mean": -2.3351261916104704e-05,
+      "std": 0.060370273888111115,
+      "mean_abs": 0.013659754768013954,
+      "mean_abs_change": 0.017756128683686256,
+      "relative_l2": 1.2270628213882446
+    },
+    {
+      "condition": "correct",
+      "batch": 1,
+      "shape": [
+        8,
+        256,
+        146
+      ],
+      "mean": 0.0003527135995682329,
+      "std": 0.05109517648816109,
+      "mean_abs": 0.01573929563164711,
+      "mean_abs_change": 0.0,
+      "relative_l2": 0.0
+    },
+    {
+      "condition": "constant",
+      "batch": 1,
+      "shape": [
+        8,
+        256,
+        146
+      ],
+      "mean": 0.00023979270190466195,
+      "std": 0.05664245784282684,
+      "mean_abs": 0.01802057772874832,
+      "mean_abs_change": 0.002600344829261303,
+      "relative_l2": 0.33745452761650085
+    },
+    {
+      "condition": "reverse",
+      "batch": 1,
+      "shape": [
+        8,
+        256,
+        146
+      ],
+      "mean": 0.00036160601302981377,
+      "std": 0.050609346479177475,
+      "mean_abs": 0.01547230128198862,
+      "mean_abs_change": 0.002595445141196251,
+      "relative_l2": 0.34022408723831177
+    },
+    {
+      "condition": "correct",
+      "batch": 2,
+      "shape": [
+        2,
+        256,
+        146
+      ],
+      "mean": 0.00028807634953409433,
+      "std": 0.05034756660461426,
+      "mean_abs": 0.015318146906793118,
+      "mean_abs_change": 0.0,
+      "relative_l2": 0.0
+    },
+    {
+      "condition": "constant",
+      "batch": 2,
+      "shape": [
+        2,
+        256,
+        146
+      ],
+      "mean": 0.00023979213437996805,
+      "std": 0.056642744690179825,
+      "mean_abs": 0.01802057959139347,
+      "mean_abs_change": 0.007497549057006836,
+      "relative_l2": 0.8641303777694702
+    },
+    {
+      "condition": "reverse",
+      "batch": 2,
+      "shape": [
+        2,
+        256,
+        146
+      ],
+      "mean": 0.0003112490230705589,
+      "std": 0.05096348375082016,
+      "mean_abs": 0.015604819171130657,
+      "mean_abs_change": 0.008526725694537163,
+      "relative_l2": 0.8972431421279907
+    }
+  ],
+  "token_position": "146 decoder index positions, exact physical receptive field not claimed; original complete window, no added padding or dropped tokens",
+  "input_sha256": "c6b6ae08bf8d8115f9f4c08bae2c9e03765dc5728a55acc4f4b1ae43826f9c59",
+  "input_count": 18
+}

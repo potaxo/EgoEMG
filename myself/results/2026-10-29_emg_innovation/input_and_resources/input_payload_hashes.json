@@ -1,0 +1,110 @@
+[
+  {
+    "path": "/mnt/d/egoemg/data/dataset_egoemg_preview/data/memmap_data/emg_right_filtered_paper.dat",
+    "bytes": 137971488,
+    "mtime_ns": 1789181521079893400,
+    "sha256": "543f0fb886c01fc831422f4d1faad5977c2cbfe9ab1f2417ccbc7bbb2f2d8cdb"
+  },
+  {
+    "path": "/mnt/d/egoemg/data/dataset_egoemg_preview/data/memmap_data/generated_joint_angles_right.dat",
+    "bytes": 344928720,
+    "mtime_ns": 1789181405814408600,
+    "sha256": "17b5e7111dfa1c23b4fcdfe159e203ed2fc49a82e70d36129603b28f5bd68e39"
+  },
+  {
+    "path": "/mnt/d/egoemg/data/dataset_egoemg_preview/data/memmap_data/generated_label_valid.dat",
+    "bytes": 8623218,
+    "mtime_ns": 1789181368709259000,
+    "sha256": "f5fff50ec9ab45c413307f136e0b6ca03305d3381db2ea366aaa8c3cb7616d33"
+  },
+  {
+    "path": "/mnt/d/egoemg/data/dataset_egoemg_preview/data/memmap_data/frame_split_id.dat",
+    "bytes": 4311609,
+    "mtime_ns": 1789181371510922200,
+    "sha256": "13661265f1a6ffa53445261f6c2a1255dd3796e0dd3344b4cf6198f24c2fced5"
+  },
+  {
+    "path": "/mnt/d/egoemg/data/dataset_egoemg_preview/data/memmap_data/episode_index.dat",
+    "bytes": 34492872,
+    "mtime_ns": 1789181387845908600,
+    "sha256": "2910761861988282e6e759247fa0160e00bfa3de5906ec817f6e8d0f0c122feb"
+  },
+  {
+    "path": "/mnt/d/egoemg/data/dataset_egoemg_preview/data/memmap_data/subject_id.dat",
+    "bytes": 17246436,
+    "mtime_ns": 1789181105511586700,
+    "sha256": "45762e7fa2d38057a12fec03813dda4eb4da4bbf80986c4f51f8303a3bd14d6d"
+  },
+  {
+    "path": "/mnt/d/egoemg/data/dataset_egoemg_preview/data/memmap_data/label_gesture_class.dat",
+    "bytes": 17246436,
+    "mtime_ns": 1789181322010085500,
+    "sha256": "6e4926513c5cfb1b2cd71ec412ccf09bdf3c2a2a346c814bf306d8e511d6c675"
+  },
+  {
+    "path": "/mnt/d/egoemg/data/dataset_egoemg_preview/data/memmap_data/label_gesture_active.dat",
+    "bytes": 4311609,
+    "mtime_ns": 1789181320715905600,
+    "sha256": "56fcbc28dd601fb3bd53814ff4dd87048dbbc64abb5e507296d391d7ef69fe40"
+  },
+  {
+    "path": "/mnt/d/egoemg/data/dataset_egoemg_preview/data/memmap_data/image_head_frame_index.dat",
+    "bytes": 17246436,
+    "mtime_ns": 1789181357708832000,
+    "sha256": "6da1500e186d5498e858f7be3bd374d266a6977be53e39fe9b3a7373020ad838"
+  },
+  {
+    "path": "/mnt/d/egoemg/data/dataset_egoemg_preview/data/memmap_data/image_head_stale.dat",
+    "bytes": 4311609,
+    "mtime_ns": 1789181346836561900,
+    "sha256": "ecb7eccb37922ad305c6683be1fc3b92aa914ad578d44574b29fc55f6bcf0df6"
+  },
+  {
+    "path": "/mnt/d/egoemg/data/dataset_egoemg_preview/data/memmap_data/image_head_delta_ms.dat",
+    "bytes": 17246436,
+    "mtime_ns": 1789181359514791900,
+    "sha256": "11748485988c0a8520af18eea96a70940510310b369149249d82095db899e21a"
+  },
+  {
+    "path": "/mnt/d/egoemg/data/dataset_egoemg_preview/data/memmap_data/mocap_right_wrist_pitch.dat",
+    "bytes": 17246436,
+    "mtime_ns": 1789181153716286000,
+    "sha256": "2b0a0ddf6faeaf47c75bb360aac564c473496f06a0bfa34d5eb96b40c82fb055"
+  },
+  {
+    "path": "/mnt/d/egoemg/data/dataset_egoemg_preview/data/memmap_data/mocap_right_wrist_yaw.dat",
+    "bytes": 17246436,
+    "mtime_ns": 1789181122731653900,
+    "sha256": "cc92b3b4294c18ccd97b241c2c455f71f2331ae268cf08482de077aea072d93a"
+  },
+  {
+    "path": "/mnt/d/egoemg/data/dataset_egoemg_preview/data/memmap_data/mocap_right_wrist_angles_valid.dat",
+    "bytes": 4311609,
+    "mtime_ns": 1789181156753500000,
+    "sha256": "bca44173352e676978a109a001836e31059f1eb78cc74a191fb92736c948d8fb"
+  },
+  {
+    "path": "/mnt/d/egoemg/data/dataset_egoemg_preview/data/pre-crop_webcam_videoframes/manifest.json",
+    "bytes": 183,
+    "mtime_ns": 1789181081565528100,
+    "sha256": "553cc138a0738b4456783fd434c3e3fea4a97badeb4e34b7e6a62a7d7d6847e7"
+  },
+  {
+    "path": "/mnt/d/egoemg/data/dataset_egoemg_preview/data/pre-crop_webcam_videoframes/episode_000020.lmdb/data.mdb",
+    "bytes": 1245265920,
+    "mtime_ns": 1789181558729242100,
+    "sha256": "4a58c8c0b91de2ce3cd1c18bddedf88dd45641f19dba097b8f08d6f0f10c9124"
+  },
+  {
+    "path": "/mnt/d/egoemg/data/dataset_egoemg_preview/data/pre-crop_webcam_videoframes/episode_000008.lmdb/data.mdb",
+    "bytes": 1223573504,
+    "mtime_ns": 1789181543972363100,
+    "sha256": "6edbeeffca3dbd059e98669c57d002ef3be47a6d30724371342b9439935df148"
+  },
+  {
+    "path": "/mnt/d/egoemg/data/dataset_egoemg_preview/data/pre-crop_webcam_videoframes/episode_000028.lmdb/data.mdb",
+    "bytes": 299630592,
+    "mtime_ns": 1789181459277878800,
+    "sha256": "61410a401658e46694e9cdfa8b7ac24fdc8a4847243628af5ad05f6e8e5fc908"
+  }
+]

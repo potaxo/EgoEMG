@@ -1,0 +1,87 @@
+{
+  "confirmed": {
+    "field": "emg_right_filtered_paper",
+    "sample_rate_hz": 2000,
+    "window_rows": 7790,
+    "window_nominal_seconds": 3.895,
+    "hand": "right",
+    "raw_shape": "T,8",
+    "layout_slots": 16,
+    "channel_map": [
+      10,
+      12,
+      0,
+      1,
+      2,
+      4,
+      5,
+      6
+    ],
+    "mirror": "none in executed loader path; upstream manifest left_hand_strategy is recorded separately",
+    "interpolation": false,
+    "order": "read float32 -> sparse 8-to-16 zero placement -> scalar normalization (std+1e-6) -> transpose C,T -> CUDA FP32",
+    "requested_key": "egoemg__filtered_paper",
+    "requested_entry": {
+      "note": "placeholder \u2014 recompute via scripts/data/compute_per_dataset_norm_stats.py with --emg-fields filtered_paper"
+    },
+    "actual_key": "egoemg",
+    "mean": 0.028774764388799667,
+    "std": 94.73531341552734,
+    "padding_after_normalization": -0.00030373852207412336,
+    "constant_control": "raw zero live signal after same sparse placement and normalization: every slot equals padding_after_normalization",
+    "legacy_zero_control": "all slots set to zero AFTER normalization, matching historical F2",
+    "rgb_mean": [
+      123.67500305175781,
+      116.27999877929688,
+      103.52999877929688
+    ],
+    "rgb_std": [
+      58.39500045776367,
+      57.12000274658203,
+      57.375
+    ],
+    "rgb": "read-only precrop LMDB, uint8 RGB 256x256, transpose CHW, no divide by 255 before mean/std",
+    "alignment": "center=start+3895; same global center image mapping and reference; output 22x1 directly center supervised",
+    "angle_units": "generated fingers already radians; wrist stored degrees converted to radians; MAE first20 linear absolute radians -> degrees",
+    "joint_order": [
+      "thumb_cmc_fe",
+      "thumb_cmc_aa",
+      "thumb_mcp_fe",
+      "thumb_ip_fe",
+      "index_mcp_aa",
+      "index_mcp_fe",
+      "index_pip_fe",
+      "index_dip_fe",
+      "middle_mcp_aa",
+      "middle_mcp_fe",
+      "middle_pip_fe",
+      "middle_dip_fe",
+      "ring_mcp_aa",
+      "ring_mcp_fe",
+      "ring_pip_fe",
+      "ring_dip_fe",
+      "pinky_mcp_aa",
+      "pinky_mcp_fe",
+      "pinky_pip_fe",
+      "pinky_dip_fe"
+    ],
+    "strict_load": true,
+    "model_mode": "center_supervised",
+    "encoder_frozen_eval": true
+  },
+  "fixed": [],
+  "unknown": {
+    "training_statistics": "checkpoint records original training-machine path but no stats bytes/hash; legacy choice at original execution not provable from supplied checkpoint",
+    "checkpoint_participant_exposure": "not fully traced",
+    "upstream_filter": "filtered_paper name and supplied preprocessing code available; original complete processing execution not re-run",
+    "historical_training_logs": "logs/fusion/resnet_small_emgfusion_center absent locally"
+  },
+  "evidence_separated": {
+    "code": "egoemg/datasets/egoemg_memmap_dataset.py:_load_norm_stats/_convert_to_emg2pose_layout/_getitem_center_supervised_emg",
+    "config": "config/experiment/fusion/fusion_rn18_s_center_16ch_wl7790.yaml",
+    "checkpoint_hparams": "fusion_checkpoint_hparams.json",
+    "training_records": "no original training statistics content recovered; current config is not execution provenance"
+  },
+  "normalization_decision": "preserve published local asset; do not select scale by evaluation MAE",
+  "checkpoint_architecture": "16ch TDS, 256-dim decoder 3 layers/4 heads, 22 outputs, center_supervised; strict state load verifies shapes; old emg2pose import names migrated by current config"
+}

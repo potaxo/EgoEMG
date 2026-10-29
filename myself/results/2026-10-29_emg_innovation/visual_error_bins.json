@@ -1,0 +1,29 @@
+[
+  {
+    "episode": "episode_000020",
+    "thresholds_deg": [
+      5.361741249577299,
+      7.791610819316555
+    ],
+    "rule": "per-recording frozen-vision-error tertiles, post hoc explanation only",
+    "used_for_training_gating_or_selection": false
+  },
+  {
+    "episode": "episode_000008",
+    "thresholds_deg": [
+      4.480362876014177,
+      6.092264140079492
+    ],
+    "rule": "per-recording frozen-vision-error tertiles, post hoc explanation only",
+    "used_for_training_gating_or_selection": false
+  },
+  {
+    "episode": "episode_000028",
+    "thresholds_deg": [
+      4.782989436498146,
+      8.199022062831993
+    ],
+    "rule": "per-recording frozen-vision-error tertiles, post hoc explanation only",
+    "used_for_training_gating_or_selection": false
+  }
+]

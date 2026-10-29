@@ -1,0 +1,3 @@
+family,batch,device,pipeline_seconds_mean,pipeline_seconds_median,samples_per_second,cuda_synchronized,includes_lmdb_and_memmap_reads,includes_frozen_backbones_and_head,storage_cache,reference_encoder
+R0,128,NVIDIA GeForce RTX 4060 Laptop GPU,0.39510964170003715,0.3970917999995436,323.96070986588626,True,True,True,OS cache warmed; inputs read directly each repeat,"fixed reference feature reused, adapter/H reference recomputed"
+R2,128,NVIDIA GeForce RTX 4060 Laptop GPU,0.37674170340014823,0.37333468799988623,339.75532531912853,True,True,True,OS cache warmed; inputs read directly each repeat,"fixed reference feature reused, adapter/H reference recomputed"
